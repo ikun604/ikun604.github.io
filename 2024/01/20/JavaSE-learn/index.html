@@ -1,0 +1,714 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#447EA5">
+  <meta name="author" content="yfz-ikun604">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="JavaSE进阶笔记Static· static是静态的意思，可以修饰成员变量和成员方法。 · static修饰成员变量表示该成员变量只在内存中只存储一份，可以被共享访问、修改。  成员变量的分类和访问分别是什么样的？  12345静态成员变量（有static修饰，属于类、加载一次，可以被共享访问），访问格式   类名.静态成员变量(推荐)   对象.静态成员变量(不推荐)。实例成员变量（无sta">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JavaSE_learn">
+<meta property="og:url" content="http://ikun604.github.io/2024/01/20/JavaSE-learn/index.html">
+<meta property="og:site_name" content="一个真正的鳗">
+<meta property="og:description" content="JavaSE进阶笔记Static· static是静态的意思，可以修饰成员变量和成员方法。 · static修饰成员变量表示该成员变量只在内存中只存储一份，可以被共享访问、修改。  成员变量的分类和访问分别是什么样的？  12345静态成员变量（有static修饰，属于类、加载一次，可以被共享访问），访问格式   类名.静态成员变量(推荐)   对象.静态成员变量(不推荐)。实例成员变量（无sta">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://ikun604.github.io/2024/01/20/JavaSE-learn/image-20240120201735323.png">
+<meta property="article:published_time" content="2024-01-20T11:44:43.000Z">
+<meta property="article:modified_time" content="2024-01-20T12:19:02.117Z">
+<meta property="article:author" content="yfz-ikun604">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://ikun604.github.io/2024/01/20/JavaSE-learn/image-20240120201735323.png">
+  
+  
+  
+  <title>JavaSE_learn - 一个真正的鳗</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"ikun604.github.io","root":"/","version":"1.9.3","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":true,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Fluid</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('https://static.zkqiang.cn/example.jpg') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="JavaSE_learn"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2024-01-20 19:44" pubdate>
+          2024年1月20日 晚上
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          2.7k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          23 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">JavaSE_learn</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h1 id="JavaSE进阶笔记"><a href="#JavaSE进阶笔记" class="headerlink" title="JavaSE进阶笔记"></a>JavaSE进阶笔记</h1><h2 id="Static"><a href="#Static" class="headerlink" title="Static"></a>Static</h2><p>· static是静态的意思，可以修饰成员变量和成员方法。</p>
+<p>· static修饰成员变量表示该成员变量只在内存中只存储一份，可以被共享访问、修改。</p>
+<ol>
+<li>成员变量的分类和访问分别是什么样的？</li>
+</ol>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs scss">静态成员变量（有static修饰，属于类、加载一次，可以被共享访问），访问格式<br>   类名.静态成员变量(推荐)<br>   对象.静态成员变量(不推荐)。<br>实例成员变量（无static修饰，属于对象），访问格式：<br>   对象.实例成员变量。<br></code></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>两种成员变量各自在什么情况下定义？</li>
+</ol>
+<figure class="highlight delphi"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs delphi">静态成员变量：表示在线人数等需要被共享的信息。<br>实例成员变量：属于每个对象，且每个对象信息不同时（<span class="hljs-keyword">name</span>,age,…等）<br></code></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>成员方法的分类和访问分别是什么样的？</li>
+</ol>
+<figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs actionscript">静态成员方法（有<span class="hljs-keyword">static</span>修饰，属于类和对象共享）访问格式：<br>   类名.静态成员方法。<br>   对象.静态成员方法。（不推荐）<br>实例成员方法（无<span class="hljs-keyword">static</span>修饰，属于对象）的访问格式：<br>   对象.实例成员方法。<br></code></pre></td></tr></table></figure>
+
+<ol start="4">
+<li>每种成员方法的使用场景是怎么样的？</li>
+</ol>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs">·表示对象自己的行为的，且方法中需要访问实例成员的，则该方法必须申明成实例方法。<br>·如果该方法是以执行一个通用功能为目的，或者需要方便访问，则可以申明成静态方法<br></code></pre></td></tr></table></figure>
+
+<ol start="5">
+<li>工具类是什么，有什么好处？</li>
+</ol>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs">·内部都是一些静态方法，每个方法完成一个功能<br>·一次编写，处处可用，提高代码的重用性。<br></code></pre></td></tr></table></figure>
+
+<ol start="6">
+<li>工具类有什么要求？</li>
+</ol>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs">·建议工具类的构造器私有化处理。<br>·工具类不需要创建对象。<br></code></pre></td></tr></table></figure>
+
+<ol start="7">
+<li>static访问注意？</li>
+</ol>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs kotlin">·静态方法只能访问静态的成员，不可以直接访问实例成员。<br>·实例方法可以访问静态的成员，也可以访问实例成员。<br>·静态方法中是不可以出现<span class="hljs-keyword">this</span>关键字的。 <br></code></pre></td></tr></table></figure>
+
+<h2 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h2><p>· 代码块是类的5大成分之一（成员变量、构造器，方法，代码块，内部类），定义在类中方法外。</p>
+<p>· 在Java类下，使用 { } 括起来的代码被称为代码块 。</p>
+<figure class="highlight asciidoc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs asciidoc">代码块分为<br><span class="hljs-code">	静态代码块: </span><br><span class="hljs-code">		格式：static&#123;&#125;</span><br><span class="hljs-code">		特点：需要通过static关键字修饰，随着类的加载而加载，并且自动触发、只执行一次</span><br><span class="hljs-section">		使用场景：在类加载的时候做一些静态数据初始化的操作，以便后续使用。</span><br><span class="hljs-section">---------------</span><br><span class="hljs-code"> 	构造代码块（了解，用的少）：</span><br><span class="hljs-code">		格式：&#123;&#125;</span><br><span class="hljs-code">		特点：每次创建对象，调用构造器执行时，都会执行该代码块中的代码，并且在构造器执行前执行</span><br><span class="hljs-code">		使用场景：初始化实例资源。</span><br></code></pre></td></tr></table></figure>
+
+<ol>
+<li>静态代码块的作用？</li>
+</ol>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs">·如果要在启动系统时对数据进行初始化。<br>·建议使用静态代码块完成数据的初始化操作，代码优雅。<br></code></pre></td></tr></table></figure>
+
+<h2 id="单例模式"><a href="#单例模式" class="headerlink" title="单例模式"></a>单例模式</h2><p>· 可以保证系统中，应用该模式的这个类永远只有一个实例，即一个类永远只能创建一个对象。</p>
+<p>· 例如任务管理器对象我们只需要一个就可以解决问题了，这样可以节省内存空间。</p>
+<ol>
+<li>饿汉单例设计模式</li>
+</ol>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs">· 在用类获取对象的时候，对象已经提前为你创建好了。<br><br> 设计步骤：<br>· 定义一个类，把构造器私有。<br>· 定义一个静态变量存储一个对象。<br></code></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-comment">/** a、定义一个单例类 */</span><br><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">SingleInstance</span> &#123;<br>    <span class="hljs-comment">/** c.定义一个静态变量存储一个对象即可 :属于类，与类一起加载一次 */</span>       <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-type">SingleInstance</span> <span class="hljs-variable">instance</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">SingleInstance</span> ();<br>    <span class="hljs-comment">/** b.单例必须私有构造器*/</span><br>    <span class="hljs-keyword">private</span> <span class="hljs-title function_">SingleInstance</span> <span class="hljs-params">()</span>&#123;<br>        System.out.println(<span class="hljs-string">&quot;创建了一个对象&quot;</span>);<br>    &#125;<br>&#125;<br><br><span class="hljs-comment">/*</span><br><span class="hljs-comment">创建方式</span><br><span class="hljs-comment">SingleInstance1 s1 = SingleInstance1.instance;</span><br><span class="hljs-comment">SingleInstance1 s2 = SingleInstance1.instance;</span><br><span class="hljs-comment">SingleInstance1 s3 = SingleInstance1.instance;</span><br><span class="hljs-comment">*/</span><br></code></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>懒汉单例设计模式</li>
+</ol>
+<figure class="highlight gcode"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs gcode">· 在真正需要该对象的时候，才去创建一个对象<span class="hljs-comment">(延迟加载对象)</span>。<br><br> 设计步骤：<br>· 定义一个类，把构造器私有。<br>· 定义一个静态变量存储一个对象。<br>· 提供一个返回单例对象的方法<br><br></code></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">SingleInstance2</span> &#123;<br>    <span class="hljs-comment">/**</span><br><span class="hljs-comment">       2、定义一个静态的成员变量用于存储一个对象，一开始不要初始化对象，因为人家是懒汉</span><br><span class="hljs-comment">     */</span><br>    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> SingleInstance2 instance;<br><br>    <span class="hljs-comment">/**</span><br><span class="hljs-comment">       1、私有构造器</span><br><span class="hljs-comment">     */</span><br>    <span class="hljs-keyword">private</span> <span class="hljs-title function_">SingleInstance2</span><span class="hljs-params">()</span>&#123;<br>    &#125;<br><br>    <span class="hljs-comment">/**</span><br><span class="hljs-comment">      3、提供一个方法暴露，真正调用这个方法的时候才创建一个单例对象</span><br><span class="hljs-comment">     */</span><br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> SingleInstance2 <span class="hljs-title function_">getInstance</span><span class="hljs-params">()</span>&#123;<br>        <span class="hljs-keyword">if</span>(instance == <span class="hljs-literal">null</span>)&#123;<br>            <span class="hljs-comment">// 第一次来拿对象，为他做一个对象</span><br>            instance = <span class="hljs-keyword">new</span> <span class="hljs-title class_">SingleInstance2</span>();<br>        &#125;<br>        <span class="hljs-keyword">return</span> instance;<br>    &#125;<br>&#125;<br><br><span class="hljs-comment">/*</span><br><span class="hljs-comment">创建方式</span><br><span class="hljs-comment">SingleInstance2 s1 = SingleInstance2.getInstance();</span><br><span class="hljs-comment">SingleInstance2 s2 = SingleInstance2.getInstance();</span><br><span class="hljs-comment">*/</span><br></code></pre></td></tr></table></figure>
+
+<h2 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h2><ol>
+<li>继承有哪些特点</li>
+</ol>
+<figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs mipsasm">· 子类可以继承父类的属性和行为，但是子类不能继承父类的构造器。<br>· <span class="hljs-keyword">Java是单继承模式：一个类只能继承一个直接父类。</span><br><span class="hljs-keyword"></span>· <span class="hljs-keyword">Java不支持多继承、但是支持多层继承。</span><br><span class="hljs-keyword"></span>· <span class="hljs-keyword">Java中所有的类都是Object类的子类。</span><br></code></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>在子类方法中访问成员（成员变量、成员方法）满足：<strong>就近原则</strong></li>
+</ol>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs">· 先子类局部范围找<br>· 然后子类成员范围找<br>· 然后父类成员范围找，如果父类范围还没有找到则报错。<br></code></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>如果子父类中，出现了重名的成员，会优先使用子类的，此时如果一定要在子类中使用父类的怎么办？</li>
+</ol>
+<figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs actionscript">可以通过<span class="hljs-keyword">super</span>关键字，指定访问父类的成员。<br></code></pre></td></tr></table></figure>
+
+<h2 id="XML"><a href="#XML" class="headerlink" title="XML"></a>XML</h2><ol>
+<li>xml的作用</li>
+</ol>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs">· 用于进行存储数据和传输数据<br>· 作为软件的配置文件<br></code></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>XML的文档约束-DTD的作用和问题？</li>
+</ol>
+<figure class="highlight lasso"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs lasso">· 可以约束<span class="hljs-built_in">XML</span>文件的编写。<br>· 不能约束具体的数据类型。<br></code></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>XML的文档约束-schema的优点？</li>
+</ol>
+<figure class="highlight lasso"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs lasso">· 可以约束<span class="hljs-built_in">XML</span>文件的标签内容格式，以及具体的数据类型。<br>· 本身也是<span class="hljs-built_in">xml</span>文件，格式更严谨。<br></code></pre></td></tr></table></figure>
+
+<ol start="4">
+<li>Dom解析的文档对象模型是怎么样的</li>
+</ol>
+<img src="/2024/01/20/JavaSE-learn/image-20240120201735323.png" srcset="/img/loading.gif" lazyload class title="image-20240120201735323">
+
+<ol start="5">
+<li><p>Dom解析常用技术技术框架—-Dom4J</p>
+</li>
+<li><p>Dom4J的解析思想？</p>
+</li>
+</ol>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs">· 得到文档对象Document，从中获取元素对象和内容<br></code></pre></td></tr></table></figure>
+
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>JavaSE_learn</div>
+      <div>http://ikun604.github.io/2024/01/20/JavaSE-learn/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>yfz-ikun604</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2024年1月20日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2024/01/18/a-problem/" title="A-problem">
+                        <span class="hidden-mobile">A-problem</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> <div>ikun604的博客|记录成长的过程</div>  
+    </div>
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.18.2/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
