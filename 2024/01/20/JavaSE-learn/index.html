@@ -16,17 +16,18 @@
   <meta name="author" content="yfz-ikun604">
   <meta name="keywords" content="">
   
-    <meta name="description" content="JavaSE进阶笔记Static· static是静态的意思，可以修饰成员变量和成员方法。 · static修饰成员变量表示该成员变量只在内存中只存储一份，可以被共享访问、修改。  成员变量的分类和访问分别是什么样的？  12345静态成员变量（有static修饰，属于类、加载一次，可以被共享访问），访问格式   类名.静态成员变量(推荐)   对象.静态成员变量(不推荐)。实例成员变量（无sta">
+    <meta name="description" content="JavaSE进阶部分学习的一些记录">
 <meta property="og:type" content="article">
 <meta property="og:title" content="JavaSE_learn">
 <meta property="og:url" content="http://ikun604.github.io/2024/01/20/JavaSE-learn/index.html">
 <meta property="og:site_name" content="一个真正的鳗">
-<meta property="og:description" content="JavaSE进阶笔记Static· static是静态的意思，可以修饰成员变量和成员方法。 · static修饰成员变量表示该成员变量只在内存中只存储一份，可以被共享访问、修改。  成员变量的分类和访问分别是什么样的？  12345静态成员变量（有static修饰，属于类、加载一次，可以被共享访问），访问格式   类名.静态成员变量(推荐)   对象.静态成员变量(不推荐)。实例成员变量（无sta">
+<meta property="og:description" content="JavaSE进阶部分学习的一些记录">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://ikun604.github.io/2024/01/20/JavaSE-learn/image-20240120201735323.png">
 <meta property="article:published_time" content="2024-01-20T11:44:43.000Z">
-<meta property="article:modified_time" content="2024-01-20T12:19:02.117Z">
+<meta property="article:modified_time" content="2024-01-20T12:32:57.526Z">
 <meta property="article:author" content="yfz-ikun604">
+<meta property="article:tag" content="CS_Learn">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="http://ikun604.github.io/2024/01/20/JavaSE-learn/image-20240120201735323.png">
   
@@ -220,7 +221,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          2.7k 字
+          3.3k 字
         
       </span>
     
@@ -231,7 +232,7 @@
         
         
         
-          23 分钟
+          28 分钟
         
       </span>
     
@@ -351,7 +352,7 @@
 </ol>
 <figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs actionscript">可以通过<span class="hljs-keyword">super</span>关键字，指定访问父类的成员。<br></code></pre></td></tr></table></figure>
 
-<h2 id="XML"><a href="#XML" class="headerlink" title="XML"></a>XML</h2><ol>
+<h2 id="XML"><a href="#XML" class="headerlink" title="XML"></a>XML</h2><h3 id="基础知识"><a href="#基础知识" class="headerlink" title="基础知识"></a>基础知识</h3><ol>
 <li>xml的作用</li>
 </ol>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs">· 用于进行存储数据和传输数据<br>· 作为软件的配置文件<br></code></pre></td></tr></table></figure>
@@ -366,18 +367,55 @@
 </ol>
 <figure class="highlight lasso"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs lasso">· 可以约束<span class="hljs-built_in">XML</span>文件的标签内容格式，以及具体的数据类型。<br>· 本身也是<span class="hljs-built_in">xml</span>文件，格式更严谨。<br></code></pre></td></tr></table></figure>
 
-<ol start="4">
+<h3 id="XML解析技术-Dom4J"><a href="#XML解析技术-Dom4J" class="headerlink" title="XML解析技术-Dom4J"></a>XML解析技术-Dom4J</h3><ol start="4">
 <li>Dom解析的文档对象模型是怎么样的</li>
 </ol>
 <img src="/2024/01/20/JavaSE-learn/image-20240120201735323.png" srcset="/img/loading.gif" lazyload class title="image-20240120201735323">
 
 <ol start="5">
-<li><p>Dom解析常用技术技术框架—-Dom4J</p>
-</li>
-<li><p>Dom4J的解析思想？</p>
-</li>
+<li>Dom4J的解析思想？</li>
 </ol>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs">· 得到文档对象Document，从中获取元素对象和内容<br></code></pre></td></tr></table></figure>
+
+<ol start="6">
+<li>Dom4J的解析后的数据形式？</li>
+</ol>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs">· 通常数据会封装成Java的对象，如单个对象，或者集合对象形式<br></code></pre></td></tr></table></figure>
+
+<h3 id="XML检索技术-XPath"><a href="#XML检索技术-XPath" class="headerlink" title="XML检索技术-XPath"></a>XML检索技术-XPath</h3><ol start="7">
+<li>如果需要从XML文件中检索需要的某个信息（如name）怎么解决？</li>
+</ol>
+<figure class="highlight gcode"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs gcode">· <span class="hljs-keyword">Do</span><span class="hljs-name">m4</span>j需要进行文件的全部解析，然后再寻找数据。<br>· Xpath技术更加适合做信息检索。<br></code></pre></td></tr></table></figure>
+
+<ol start="8">
+<li>XPath作用</li>
+</ol>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs awk">---检索XML文件中的信息<br>绝对路径： <span class="hljs-regexp">/根元素/</span>子元素/孙元素<br>相对路径：.<span class="hljs-regexp">/子元素/</span>孙元素<br>全文检索：<span class="hljs-regexp">//</span>contact<br>属性查找：<span class="hljs-regexp">//</span>@属性名 、<span class="hljs-regexp">//</span>元素[@属性名]、<span class="hljs-regexp">//</span>元素<span class="hljs-regexp">//</span>[@属性名=‘值’]<br></code></pre></td></tr></table></figure>
+
+<h2 id="设计模式"><a href="#设计模式" class="headerlink" title="设计模式"></a>设计模式</h2><h3 id="工厂模式"><a href="#工厂模式" class="headerlink" title="工厂模式"></a>工厂模式</h3><ol>
+<li>什么是工厂设计模式？</li>
+</ol>
+<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs dart">工厂模式（Factory <span class="hljs-built_in">Pattern</span>）是 Java 中最常用的设计模式之一，这种类型的设计模式属于创建型模式，它提供了一种获取对象的方式。<br></code></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>工厂设计模式的作用：</li>
+</ol>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs">· 工厂的方法可以封装对象的创建细节，比如：为该对象进行加工和数据注入。<br>· 可以实现类与类之间的解耦操作（核心思想）。<br></code></pre></td></tr></table></figure>
+
+<h3 id="装饰模式"><a href="#装饰模式" class="headerlink" title="装饰模式"></a>装饰模式</h3><ol start="3">
+<li>什么是装饰模式</li>
+</ol>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs">创建一个新类，包装原始类，从而在新类中提升原来类的功能。<br></code></pre></td></tr></table></figure>
+
+<ol start="4">
+<li>装饰模式的作用</li>
+</ol>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs stylus">装饰模式指的是在不改变原类的基础上, 动态地扩展一个类的功能。<br><br>example:<br><span class="hljs-function"><span class="hljs-title">InputStream</span><span class="hljs-params">(抽象父类)</span></span><br><span class="hljs-function"><span class="hljs-title">FileInputStream</span><span class="hljs-params">(实现子类，读写性能较差)</span></span><br><span class="hljs-function"><span class="hljs-title">BufferedInputStream</span><span class="hljs-params">(实现子类，装饰类，读写性能高)</span></span><br></code></pre></td></tr></table></figure>
+
+<ol start="5">
+<li>设计步骤</li>
+</ol>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs">· 定义父类。<br>· 定义原始类，继承父类，定义功能。<br>· 定义装饰类，继承父类，包装原始类，增强功能！！<br></code></pre></td></tr></table></figure>
 
 
                 
@@ -387,6 +425,34 @@
             <div>
               <div class="post-metas my-3">
   
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%BC%80%E5%8F%91/" class="category-chain-item">开发</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/CS-Learn/">#CS_Learn</a>
+      
+    </div>
   
 </div>
 
