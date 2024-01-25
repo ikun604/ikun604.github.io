@@ -33,9 +33,26 @@
 <meta property="og:image" content="http://ikun604.github.io/2024/01/20/JavaSE-learn/image-20240121201745099.png">
 <meta property="og:image" content="http://ikun604.github.io/2024/01/20/JavaSE-learn/image-20240121203217755.png">
 <meta property="og:image" content="http://ikun604.github.io/2024/01/20/JavaSE-learn/image-20240121203155495.png">
+<meta property="og:image" content="http://ikun604.github.io/2024/01/20/JavaSE-learn/image-20240121214254913.png">
+<meta property="og:image" content="http://ikun604.github.io/2024/01/20/JavaSE-learn/image-20240121214307125.png">
+<meta property="og:image" content="http://ikun604.github.io/2024/01/20/JavaSE-learn/image-20240121220651073.png">
 <meta property="og:image" content="http://ikun604.github.io/2024/01/20/JavaSE-learn/image-20240120201735323.png">
+<meta property="og:image" content="http://ikun604.github.io/2024/01/20/JavaSE-learn/image-20240121230153546.png">
+<meta property="og:image" content="http://ikun604.github.io/2024/01/20/JavaSE-learn/image-20240121230411724.png">
+<meta property="og:image" content="http://ikun604.github.io/2024/01/20/JavaSE-learn/image-20240121230203233.png">
+<meta property="og:image" content="http://ikun604.github.io/2024/01/20/JavaSE-learn/image-20240121230214755.png">
+<meta property="og:image" content="http://ikun604.github.io/2024/01/20/JavaSE-learn/image-20240121230225801.png">
+<meta property="og:image" content="http://ikun604.github.io/2024/01/20/JavaSE-learn/image-20240121231142652.png">
+<meta property="og:image" content="http://ikun604.github.io/2024/01/20/JavaSE-learn/image-20240121231205579.png">
+<meta property="og:image" content="http://ikun604.github.io/2024/01/20/JavaSE-learn/image-20240121234726534.png">
+<meta property="og:image" content="http://ikun604.github.io/2024/01/20/JavaSE-learn/image-20240121234817317.png">
+<meta property="og:image" content="http://ikun604.github.io/2024/01/20/JavaSE-learn/image-20240122171555671.png">
+<meta property="og:image" content="http://ikun604.github.io/2024/01/20/JavaSE-learn/image-20240122175345609.png">
+<meta property="og:image" content="http://ikun604.github.io/2024/01/20/JavaSE-learn/image-20240122175727461.png">
+<meta property="og:image" content="http://ikun604.github.io/2024/01/20/JavaSE-learn/image-20240122180219558.png">
+<meta property="og:image" content="http://ikun604.github.io/2024/01/20/JavaSE-learn/image-20240125091801389.png">
 <meta property="article:published_time" content="2024-01-20T11:44:43.000Z">
-<meta property="article:modified_time" content="2024-01-21T12:32:23.017Z">
+<meta property="article:modified_time" content="2024-01-25T12:08:51.531Z">
 <meta property="article:author" content="yfz-ikun604">
 <meta property="article:tag" content="CS_Learn">
 <meta name="twitter:card" content="summary_large_image">
@@ -231,7 +248,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          5.4k 字
+          8k 字
         
       </span>
     
@@ -242,7 +259,7 @@
         
         
         
-          45 分钟
+          67 分钟
         
       </span>
     
@@ -462,6 +479,22 @@
 
 <img src="/2024/01/20/JavaSE-learn/image-20240121203155495.png" srcset="/img/loading.gif" lazyload class title="image-20240121203155495">
 
+<h3 id="Date"><a href="#Date" class="headerlink" title="Date"></a>Date</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-number">1</span>、日期对象如何创建，如何获取时间毫秒值？<br><span class="hljs-keyword">public</span>  <span class="hljs-title function_">Date</span><span class="hljs-params">()</span>;<br><span class="hljs-keyword">public</span> <span class="hljs-type">long</span> <span class="hljs-title function_">getTime</span><span class="hljs-params">()</span>;<br><span class="hljs-number">2</span>、时间毫秒值怎么恢复成日期对象<br><span class="hljs-keyword">public</span> <span class="hljs-title function_">Date</span><span class="hljs-params">(<span class="hljs-type">long</span> time)</span>;<br><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">setTime</span><span class="hljs-params">(<span class="hljs-type">long</span> time)</span>;<br></code></pre></td></tr></table></figure>
+
+<h3 id="SimpleDateFormat"><a href="#SimpleDateFormat" class="headerlink" title="SimpleDateFormat"></a>SimpleDateFormat</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">SimpleDateFormatDemo01</span> &#123;<br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> &#123;<br>        <span class="hljs-comment">// 1、日期对象</span><br>        <span class="hljs-type">Date</span> <span class="hljs-variable">d</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Date</span>();<br>        System.out.println(d);<br><br>        <span class="hljs-comment">// 2、格式化这个日期对象 (指定最终格式化的形式)</span><br>        <span class="hljs-type">SimpleDateFormat</span> <span class="hljs-variable">sdf</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">SimpleDateFormat</span>(<span class="hljs-string">&quot;yyyy年MM月dd日 HH:mm:ss EEE a&quot;</span>);<br>        <span class="hljs-comment">// 3、开始格式化日期对象成为喜欢的字符串形式</span><br>        <span class="hljs-type">String</span> <span class="hljs-variable">rs</span> <span class="hljs-operator">=</span> sdf.format(d);<br>        System.out.println(rs);<br><br>        System.out.println(<span class="hljs-string">&quot;----------------------------&quot;</span>);<br><br>        <span class="hljs-comment">// 4、格式化时间毫秒值</span><br>        <span class="hljs-comment">// 需求：请问121秒后的时间是多少</span><br>        <span class="hljs-type">long</span> <span class="hljs-variable">time1</span> <span class="hljs-operator">=</span> System.currentTimeMillis() + <span class="hljs-number">121</span> * <span class="hljs-number">1000</span>;<br>        <span class="hljs-type">String</span> <span class="hljs-variable">rs2</span> <span class="hljs-operator">=</span> sdf.format(time1);<br>        System.out.println(rs2);<br><br>        System.out.println(<span class="hljs-string">&quot;------------解析字符串时间，下个代码---------------&quot;</span>);<br>        --------------------------------------<br>         <span class="hljs-comment">// 1、把字符串时间拿到程序中来</span><br>        <span class="hljs-type">String</span> <span class="hljs-variable">dateStr</span> <span class="hljs-operator">=</span> <span class="hljs-string">&quot;2021年08月06日 11:11:11&quot;</span>;<br><br>        <span class="hljs-comment">// 2、把字符串时间解析成日期对象:形式必须与被解析时间的形式完全一样，否则运行时解析报错！</span><br>        <span class="hljs-type">SimpleDateFormat</span> <span class="hljs-variable">sdf</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">SimpleDateFormat</span>(<span class="hljs-string">&quot;yyyy年MM月dd日 HH:mm:ss&quot;</span>);<br>        <span class="hljs-type">Date</span> <span class="hljs-variable">d</span> <span class="hljs-operator">=</span> sdf.parse(dateStr);<br><br>        <span class="hljs-comment">// 3、往后走2天 14小时 49分 06秒</span><br>        <span class="hljs-type">long</span> <span class="hljs-variable">time</span> <span class="hljs-operator">=</span> d.getTime() + (<span class="hljs-number">2L</span>*<span class="hljs-number">24</span>*<span class="hljs-number">60</span>*<span class="hljs-number">60</span> + <span class="hljs-number">14</span>*<span class="hljs-number">60</span>*<span class="hljs-number">60</span> + <span class="hljs-number">49</span>*<span class="hljs-number">60</span> + <span class="hljs-number">6</span>) * <span class="hljs-number">1000</span>;<br><br>        <span class="hljs-comment">// 4、格式化这个时间毫秒值就是结果</span><br>        System.out.println(sdf.format(time));<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<h3 id="Calendar"><a href="#Calendar" class="headerlink" title="Calendar"></a>Calendar</h3><img src="/2024/01/20/JavaSE-learn/image-20240121214254913.png" srcset="/img/loading.gif" lazyload class title="image-20240121214254913">
+
+<img src="/2024/01/20/JavaSE-learn/image-20240121214307125.png" srcset="/img/loading.gif" lazyload class title="image-20240121214307125">
+
+<h3 id="Arrays"><a href="#Arrays" class="headerlink" title="Arrays"></a>Arrays</h3><img src="/2024/01/20/JavaSE-learn/image-20240121220651073.png" srcset="/img/loading.gif" lazyload class title="image-20240121220651073">
+
+
+
+
+
+
+
 <h2 id="XML"><a href="#XML" class="headerlink" title="XML"></a>XML</h2><h3 id="基础知识"><a href="#基础知识" class="headerlink" title="基础知识"></a>基础知识</h3><ol>
 <li>xml的作用</li>
 </ol>
@@ -526,6 +559,89 @@
 <li>设计步骤</li>
 </ol>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs">· 定义父类。<br>· 定义原始类，继承父类，定义功能。<br>· 定义装饰类，继承父类，包装原始类，增强功能！！<br></code></pre></td></tr></table></figure>
+
+<h2 id="正则表达式"><a href="#正则表达式" class="headerlink" title="正则表达式"></a>正则表达式</h2><img src="/2024/01/20/JavaSE-learn/image-20240121230153546.png" srcset="/img/loading.gif" lazyload class title="image-20240121230153546">
+
+<img src="/2024/01/20/JavaSE-learn/image-20240121230411724.png" srcset="/img/loading.gif" lazyload class title="image-20240121230411724">
+
+<img src="/2024/01/20/JavaSE-learn/image-20240121230203233.png" srcset="/img/loading.gif" lazyload class title="image-20240121230203233">
+
+<img src="/2024/01/20/JavaSE-learn/image-20240121230214755.png" srcset="/img/loading.gif" lazyload class title="image-20240121230214755">
+
+<img src="/2024/01/20/JavaSE-learn/image-20240121230225801.png" srcset="/img/loading.gif" lazyload class title="image-20240121230225801">
+
+<h2 id="包装类"><a href="#包装类" class="headerlink" title="包装类"></a>包装类</h2><img src="/2024/01/20/JavaSE-learn/image-20240121231142652.png" srcset="/img/loading.gif" lazyload class title="image-20240121231142652">
+
+<img src="/2024/01/20/JavaSE-learn/image-20240121231205579.png" srcset="/img/loading.gif" lazyload class title="image-20240121231205579">
+
+<h2 id="JDK8新增日期类"><a href="#JDK8新增日期类" class="headerlink" title="JDK8新增日期类"></a>JDK8新增日期类</h2><img src="/2024/01/20/JavaSE-learn/image-20240121234726534.png" srcset="/img/loading.gif" lazyload class title="image-20240121234726534">
+
+<img src="/2024/01/20/JavaSE-learn/image-20240121234817317.png" srcset="/img/loading.gif" lazyload class title="image-20240121234817317">
+
+<h2 id="集合"><a href="#集合" class="headerlink" title="集合"></a>集合</h2><ol>
+<li>集合的代表是？</li>
+</ol>
+<figure class="highlight coq"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs coq"><span class="hljs-keyword">Collection</span>接口<br></code></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>Collection集合分了哪两种常用的集合体系？</li>
+</ol>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs scss">List系列集合：添加的元素是有序、可重复、有索引。<br>Set系列集合：添加的元素是无序、不重复、无索引。<br>	 <span class="hljs-built_in">HashSet</span>(哈希表): 无序、不重复、无索引。<br>	 <span class="hljs-built_in">LinkedHashSet</span>(哈希表+双链表)：有序、不重复、无索引<br>     <span class="hljs-built_in">TreeSet</span>(红黑树)：排序、不重复、无索引。<br></code></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>常用API</li>
+</ol>
+<img src="/2024/01/20/JavaSE-learn/image-20240122171555671.png" srcset="/img/loading.gif" lazyload class title="image-20240122171555671">
+
+<ol start="4">
+<li>集合的遍历的方式</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-number">1.</span>迭代器<br><span class="hljs-comment">// 先得到当前集合的迭代器对象，然后打印</span><br>        Iterator&lt;String&gt; it= lists.iterator();<br>        <span class="hljs-keyword">while</span>(it.hasNext())&#123;<br>            String ele=it.next();<br>            System.out.println(ele);<br>        &#125;<br><span class="hljs-comment">// 如果取元素越界会出现什么问题? NoSuchElementException异常</span><br><br><span class="hljs-number">2.</span><span class="hljs-keyword">for</span>循环<br>       <span class="hljs-keyword">for</span> (String ele : lists) &#123;<br>            System.out.println(ele);<br>        &#125;    <br></code></pre></td></tr></table></figure>
+
+<ol start="5">
+<li>集合中存储的是元素的什么信息？</li>
+</ol>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs">集合中存储的是元素对象的地址<br></code></pre></td></tr></table></figure>
+
+<ol start="6">
+<li>List集合特有方法</li>
+</ol>
+<img src="/2024/01/20/JavaSE-learn/image-20240122175345609.png" srcset="/img/loading.gif" lazyload class title="image-20240122175345609">
+
+<ol start="7">
+<li>List的实现类的底层原理</li>
+</ol>
+<figure class="highlight processing"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs processing">· <span class="hljs-built_in">ArrayList</span>底层是基于数组实现的，根据查询元素快，增删相对慢。<br>· LinkedList底层基于双链表实现的，查询元素慢，增删首尾元素是非常快的<br></code></pre></td></tr></table></figure>
+
+<ol start="8">
+<li>LinkedList特有功能</li>
+</ol>
+<img src="/2024/01/20/JavaSE-learn/image-20240122175727461.png" srcset="/img/loading.gif" lazyload class title="image-20240122175727461">
+
+<ol start="9">
+<li>泛型</li>
+</ol>
+<img src="/2024/01/20/JavaSE-learn/image-20240122180219558.png" srcset="/img/loading.gif" lazyload class title="image-20240122180219558">
+
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs scss">(<span class="hljs-number">1</span>)泛型类(方法)核心思想：<br>把出现泛型变量(方法)的地方全部替换成传输的真实数据类型<br>(<span class="hljs-number">2</span>)泛型类的作用<br>编译阶段约定操作的数据的类型，类似于集合的作用。<br>(<span class="hljs-number">3</span>)泛型方法的作用<br>方法中可以使用泛型接收一切实际类型的参数，方法更具备通用性<br>(<span class="hljs-number">4</span>)泛型接口的作用<br>泛型接口可以约束实现类，实现类可以在实现接口的时候传入自己操作的数据类型这样重写的方法都将是针对于该类型的操作。<br>(<span class="hljs-number">5</span>)泛型的上下限<br>· ? extends Car: ?必须是Car或者其子类   泛型上限<br>· ? super Car ： ?必须是Car或者其父类   泛型下限<br></code></pre></td></tr></table></figure>
+
+<ol start="10">
+<li>如果希望Set集合认为2个内容相同的对象是重复的应该怎么办？</li>
+</ol>
+<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs applescript">重写对象的hashCode和<span class="hljs-keyword">equals</span>方法<br></code></pre></td></tr></table></figure>
+
+<ol start="11">
+<li>TreeSet集合自定义排序规则</li>
+</ol>
+<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs dart">· 类实现<span class="hljs-built_in">Comparable</span>接口，重写比较规则<br>· 自定义Comparator比较器对象，重写比较规则<br></code></pre></td></tr></table></figure>
+
+
+
+
+
+<h2 id="可变参数"><a href="#可变参数" class="headerlink" title="可变参数"></a>可变参数</h2><img src="/2024/01/20/JavaSE-learn/image-20240125091801389.png" srcset="/img/loading.gif" lazyload class title="image-20240125091801389">
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-comment">//example</span><br><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">MethodDemo</span> &#123;<br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> &#123;<br><br>        sum(); <span class="hljs-comment">// 1、不传参数</span><br>        sum(<span class="hljs-number">10</span>); <span class="hljs-comment">// 2、可以传输一个参数</span><br>        sum(<span class="hljs-number">10</span>, <span class="hljs-number">20</span>, <span class="hljs-number">30</span>); <span class="hljs-comment">// 3、可以传输多个参数</span><br>        sum(<span class="hljs-keyword">new</span> <span class="hljs-title class_">int</span>[]&#123;<span class="hljs-number">10</span>, <span class="hljs-number">20</span>, <span class="hljs-number">30</span>, <span class="hljs-number">40</span>, <span class="hljs-number">50</span>&#125;); <span class="hljs-comment">// 4、可以传输一个数组</span><br>    &#125;<br><br>    <span class="hljs-comment">/**</span><br><span class="hljs-comment">       注意：一个形参列表中只能有一个可变参数,可变参数必须放在形参列表的最后面</span><br><span class="hljs-comment">     * <span class="hljs-doctag">@param</span> nums</span><br><span class="hljs-comment">     */</span><br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">sum</span><span class="hljs-params">(  <span class="hljs-type">int</span>...nums)</span>&#123;<br>        <span class="hljs-comment">// 注意：可变参数在方法内部其实就是一个数组。 nums</span><br>        System.out.println(<span class="hljs-string">&quot;元素个数：&quot;</span> + nums.length);<br>        System.out.println(<span class="hljs-string">&quot;元素内容：&quot;</span> + Arrays.toString(nums));<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
 
 
                 
