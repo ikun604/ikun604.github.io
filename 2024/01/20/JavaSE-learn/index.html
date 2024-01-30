@@ -60,8 +60,33 @@
 <meta property="og:image" content="http://ikun604.github.io/2024/01/20/JavaSE-learn/image-20240125231028787.png">
 <meta property="og:image" content="http://ikun604.github.io/2024/01/20/JavaSE-learn/image-20240125231124487.png">
 <meta property="og:image" content="http://ikun604.github.io/2024/01/20/JavaSE-learn/image-20240125231325823.png">
+<meta property="og:image" content="http://ikun604.github.io/2024/01/20/JavaSE-learn/image-20240129192719976.png">
+<meta property="og:image" content="http://ikun604.github.io/2024/01/20/JavaSE-learn/image-20240129193051369.png">
+<meta property="og:image" content="http://ikun604.github.io/2024/01/20/JavaSE-learn/image-20240129194824030.png">
+<meta property="og:image" content="http://ikun604.github.io/2024/01/20/JavaSE-learn/image-20240129195615800.png">
+<meta property="og:image" content="http://ikun604.github.io/2024/01/20/JavaSE-learn/image-20240129201057121.png">
+<meta property="og:image" content="http://ikun604.github.io/2024/01/20/JavaSE-learn/image-20240129201635754.png">
+<meta property="og:image" content="http://ikun604.github.io/2024/01/20/JavaSE-learn/image-20240129202304563.png">
+<meta property="og:image" content="http://ikun604.github.io/2024/01/20/JavaSE-learn/image-20240129202313310.png">
+<meta property="og:image" content="http://ikun604.github.io/2024/01/20/JavaSE-learn/image-20240129203813532.png">
+<meta property="og:image" content="http://ikun604.github.io/2024/01/20/JavaSE-learn/image-20240129204325672.png">
+<meta property="og:image" content="http://ikun604.github.io/2024/01/20/JavaSE-learn/image-20240129204347914.png">
+<meta property="og:image" content="http://ikun604.github.io/2024/01/20/JavaSE-learn/image-20240129204715240.png">
+<meta property="og:image" content="http://ikun604.github.io/2024/01/20/JavaSE-learn/image-20240130171928139.png">
+<meta property="og:image" content="http://ikun604.github.io/2024/01/20/JavaSE-learn/image-20240130172012387.png">
+<meta property="og:image" content="http://ikun604.github.io/2024/01/20/JavaSE-learn/image-20240130172416914.png">
+<meta property="og:image" content="http://ikun604.github.io/2024/01/20/JavaSE-learn/image-20240130183243181.png">
+<meta property="og:image" content="http://ikun604.github.io/2024/01/20/JavaSE-learn/image-20240130183850628.png">
+<meta property="og:image" content="http://ikun604.github.io/2024/01/20/JavaSE-learn/image-20240130183901924.png">
+<meta property="og:image" content="http://ikun604.github.io/2024/01/20/JavaSE-learn/image-20240130214107955.png">
+<meta property="og:image" content="http://ikun604.github.io/2024/01/20/JavaSE-learn/image-20240130215124775.png">
+<meta property="og:image" content="http://ikun604.github.io/2024/01/20/JavaSE-learn/image-20240130220427591.png">
+<meta property="og:image" content="http://ikun604.github.io/2024/01/20/JavaSE-learn/image-20240130220441921.png">
+<meta property="og:image" content="http://ikun604.github.io/2024/01/20/JavaSE-learn/image-20240130221025137.png">
+<meta property="og:image" content="http://ikun604.github.io/2024/01/20/JavaSE-learn/image-20240130221203893.png">
+<meta property="og:image" content="http://ikun604.github.io/2024/01/20/JavaSE-learn/image-20240130221423004.png">
 <meta property="article:published_time" content="2024-01-20T11:44:43.000Z">
-<meta property="article:modified_time" content="2024-01-25T15:13:29.397Z">
+<meta property="article:modified_time" content="2024-01-30T14:35:50.363Z">
 <meta property="article:author" content="yfz-ikun604">
 <meta property="article:tag" content="CS_Learn">
 <meta name="twitter:card" content="summary_large_image">
@@ -257,7 +282,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          11k 字
+          16k 字
         
       </span>
     
@@ -268,7 +293,7 @@
         
         
         
-          91 分钟
+          133 分钟
         
       </span>
     
@@ -685,6 +710,126 @@
 
 <h4 id="作用"><a href="#作用" class="headerlink" title="作用"></a>作用</h4><p>· Stream流是操作集合数组的手段</p>
 <p>· 操作的结果数据最终要恢复到集合或者数组中</p>
+<h2 id="File"><a href="#File" class="headerlink" title="File"></a>File</h2><h3 id="File类创建对象"><a href="#File类创建对象" class="headerlink" title="File类创建对象"></a>File类创建对象</h3><img src="/2024/01/20/JavaSE-learn/image-20240129192719976.png" srcset="/img/loading.gif" lazyload class title="image-20240129192719976">
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-type">File</span> <span class="hljs-variable">f</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">File</span>(<span class="hljs-string">&quot;D:&quot;</span> + File.separator+<span class="hljs-string">&quot;a&quot;</span>+ File.separator +<span class="hljs-string">&quot;b.jpg&quot;</span>);<br>      <span class="hljs-type">long</span> <span class="hljs-variable">size</span> <span class="hljs-operator">=</span> f.length(); <span class="hljs-comment">// 是文件的字节大小</span><br>      System.out.println(size);<br><br>      <span class="hljs-comment">// 2、File创建对象，支持绝对路径 支持相对路径（重点）</span><br>      <span class="hljs-type">File</span> <span class="hljs-variable">f1</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">File</span>(<span class="hljs-string">&quot;D:\\a\\c.jpeg&quot;</span>); <span class="hljs-comment">// 绝对路径</span><br>      System.out.println(f1.length());<br><br>      <span class="hljs-comment">// 相对路径：一般定位模块中的文件的。 相对到工程下！！</span><br>      <span class="hljs-type">File</span> <span class="hljs-variable">f2</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">File</span>(<span class="hljs-string">&quot;file-io-app/src/data.txt&quot;</span>);<br>      System.out.println(f2.length());<br><br>      <span class="hljs-comment">// 3、File创建对象 ，可以是文件也可以是文件夹</span><br>      <span class="hljs-type">File</span> <span class="hljs-variable">f3</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">File</span>(<span class="hljs-string">&quot;D:\\a&quot;</span>);<br>      System.out.println(f3.exists()); <span class="hljs-comment">// 判断这个路径是否存在，这个文件夹存在否</span><br></code></pre></td></tr></table></figure>
+
+<h3 id="相关API"><a href="#相关API" class="headerlink" title="相关API"></a>相关API</h3><img src="/2024/01/20/JavaSE-learn/image-20240129193051369.png" srcset="/img/loading.gif" lazyload class title="image-20240129193051369">
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><code class="hljs java">	<span class="hljs-comment">// 获取文件的大小：字节个数。</span><br>    System.out.println(f1.length()); <span class="hljs-comment">// 字节大小</span><br>---------------------------------------------------------------------------------<br>		<span class="hljs-type">File</span> <span class="hljs-variable">f</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">File</span>(<span class="hljs-string">&quot;file-io-app\\src\\data.txt&quot;</span>);<br>        <span class="hljs-comment">// a.创建新文件，创建成功返回true ,反之 ,不需要这个，以后文件写出去的时候都会自动创建</span><br>        System.out.println(f.createNewFile());<br>        <span class="hljs-type">File</span> <span class="hljs-variable">f1</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">File</span>(<span class="hljs-string">&quot;file-io-app\\src\\data02.txt&quot;</span>);<br>        System.out.println(f1.createNewFile()); <span class="hljs-comment">// （几乎不用的，因为以后文件都是自动创建的）</span><br><br>        <span class="hljs-comment">// b.mkdir创建一级目录</span><br>        <span class="hljs-type">File</span> <span class="hljs-variable">f2</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">File</span>(<span class="hljs-string">&quot;D:/resources/aaa&quot;</span>);<br>        System.out.println(f2.mkdir());<br><br>        <span class="hljs-comment">// c.mkdirs创建多级目录(重点)</span><br>        <span class="hljs-type">File</span> <span class="hljs-variable">f3</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">File</span>(<span class="hljs-string">&quot;D:/resources/ccc/ddd/eee/ffff&quot;</span>);<br>        System.out.println(f3.mkdirs()); <span class="hljs-comment">// 支持多级创建</span><br><br>        <span class="hljs-comment">// d.删除文件或者空文件夹</span><br>        System.out.println(f1.delete());<br>        <span class="hljs-type">File</span> <span class="hljs-variable">f4</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">File</span>(<span class="hljs-string">&quot;D:/resources/xueshan.jpeg&quot;</span>);<br>        System.out.println(f4.delete()); <span class="hljs-comment">// 占用一样可以删除</span><br><br>        <span class="hljs-comment">// 只能删除空文件夹,不能删除非空文件夹.</span><br>        <span class="hljs-type">File</span> <span class="hljs-variable">f5</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">File</span>(<span class="hljs-string">&quot;D:/resources/aaa&quot;</span>);<br>        System.out.println(f5.delete());<br></code></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-comment">/**</span><br><span class="hljs-comment">    - public String[] list()：</span><br><span class="hljs-comment">         获取当前目录下所有的&quot;一级文件名称&quot;到一个字符串数组中去返回。</span><br><span class="hljs-comment">    - public File[] listFiles()(常用)：</span><br><span class="hljs-comment">         获取当前目录下所有的&quot;一级文件对象&quot;到一个文件对象数组中去返回（重点）</span><br><span class="hljs-comment"> */</span><br><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">FileDemo04</span> &#123;<br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> &#123;<br>        <span class="hljs-comment">// 1、定位一个目录</span><br>        <span class="hljs-type">File</span> <span class="hljs-variable">f1</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">File</span>(<span class="hljs-string">&quot;D:/resources&quot;</span>);<br>        String[] names = f1.list();<br>        <span class="hljs-keyword">for</span> (String name : names) &#123;<br>            System.out.println(name);<br>        &#125;<br><br>        <span class="hljs-comment">// 2.一级文件对象</span><br>        <span class="hljs-comment">// 获取当前目录下所有的&quot;一级文件对象&quot;到一个文件对象数组中去返回（重点）</span><br>        File[] files = f1.listFiles();<br>        <span class="hljs-keyword">for</span> (File f : files) &#123;<br>            System.out.println(f.getAbsolutePath());<br>        &#125;<br><br>        <span class="hljs-comment">// 注意事项</span><br>        <span class="hljs-type">File</span> <span class="hljs-variable">dir</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">File</span>(<span class="hljs-string">&quot;D:/resources/ddd&quot;</span>);<br>        File[] files1 = dir.listFiles();<br>        System.out.println(Arrays.toString(files1));<br>    &#125;<br>&#125;<br><br></code></pre></td></tr></table></figure>
+
+<h3 id="字符集的解码，编码操作"><a href="#字符集的解码，编码操作" class="headerlink" title="字符集的解码，编码操作"></a>字符集的解码，编码操作</h3><img src="/2024/01/20/JavaSE-learn/image-20240129194824030.png" srcset="/img/loading.gif" lazyload class title="image-20240129194824030">
+
+<h2 id="IO流"><a href="#IO流" class="headerlink" title="IO流"></a>IO流</h2><h3 id="四大类"><a href="#四大类" class="headerlink" title="四大类"></a>四大类</h3><p>· 字节输入流：以内存为基准，来自磁盘文件&#x2F;网络中的数据以字节的形式读入到内存中去的流称为字节输入流。</p>
+<p>· 字节输出流：以内存为基准，把内存中的数据以字节写出到磁盘文件或者网络中去的流称为字节输出流。</p>
+<p>· 字符输入流：以内存为基准，来自磁盘文件&#x2F;网络中的数据以字符的形式读入到内存中去的流称为字符输入流。</p>
+<p>· 字符输出流：以内存为基准，把内存中的数据以字符写出到磁盘文件或者网络介质中去的流称为字符输出流</p>
+<img src="/2024/01/20/JavaSE-learn/image-20240129195615800.png" srcset="/img/loading.gif" lazyload class title="image-20240129195615800">
+
+<h3 id="文件字节输入流：FileInputStream"><a href="#文件字节输入流：FileInputStream" class="headerlink" title="文件字节输入流：FileInputStream"></a>文件字节输入流：FileInputStream</h3><p>作用：以内存为基准，把磁盘文件中的数据以字节的形式读取到内存中去。</p>
+<img src="/2024/01/20/JavaSE-learn/image-20240129201057121.png" srcset="/img/loading.gif" lazyload class title="image-20240129201057121">
+
+<h3 id="避免乱码问题"><a href="#避免乱码问题" class="headerlink" title="避免乱码问题"></a>避免乱码问题</h3><img src="/2024/01/20/JavaSE-learn/image-20240129201635754.png" srcset="/img/loading.gif" lazyload class title="image-20240129201635754">
+
+<h3 id="文件字节输出流：FileOutputStream"><a href="#文件字节输出流：FileOutputStream" class="headerlink" title="文件字节输出流：FileOutputStream"></a>文件字节输出流：FileOutputStream</h3><p>作用：以内存为基准，把内存中的数据以字节的形式写出到磁盘文件中去的流。</p>
+<img src="/2024/01/20/JavaSE-learn/image-20240129202304563.png" srcset="/img/loading.gif" lazyload class title="image-20240129202304563">
+
+<img src="/2024/01/20/JavaSE-learn/image-20240129202313310.png" srcset="/img/loading.gif" lazyload class title="image-20240129202313310">
+
+<h3 id="资源释放的处理方式"><a href="#资源释放的处理方式" class="headerlink" title="资源释放的处理方式"></a>资源释放的处理方式</h3><h4 id="第一种方式"><a href="#第一种方式" class="headerlink" title="第一种方式"></a>第一种方式</h4><img src="/2024/01/20/JavaSE-learn/image-20240129203813532.png" srcset="/img/loading.gif" lazyload class title="image-20240129203813532">
+
+<ol>
+<li>try-catch-finally的作用</li>
+</ol>
+<p>finally代码块是最终一定要执行的，可以在代码执行完毕的最后用于释放资源。</p>
+<h4 id="第二种方式"><a href="#第二种方式" class="headerlink" title="第二种方式"></a>第二种方式</h4><img src="/2024/01/20/JavaSE-learn/image-20240129204325672.png" srcset="/img/loading.gif" lazyload class title="image-20240129204325672">
+
+<img src="/2024/01/20/JavaSE-learn/image-20240129204347914.png" srcset="/img/loading.gif" lazyload class title="image-20240129204347914">
+
+<h3 id="文件字符输入流-Reader"><a href="#文件字符输入流-Reader" class="headerlink" title="文件字符输入流: Reader"></a>文件字符输入流: Reader</h3><img src="/2024/01/20/JavaSE-learn/image-20240129204715240.png" srcset="/img/loading.gif" lazyload class title="image-20240129204715240">
+
+<h3 id="文件字符输出流-Writer"><a href="#文件字符输出流-Writer" class="headerlink" title="文件字符输出流: Writer"></a>文件字符输出流: Writer</h3><img src="/2024/01/20/JavaSE-learn/image-20240130171928139.png" srcset="/img/loading.gif" lazyload class title="image-20240130171928139">
+
+<img src="/2024/01/20/JavaSE-learn/image-20240130172012387.png" srcset="/img/loading.gif" lazyload class title="image-20240130172012387">
+
+<img src="/2024/01/20/JavaSE-learn/image-20240130172416914.png" srcset="/img/loading.gif" lazyload class title="image-20240130172416914">
+
+<h3 id="字节缓冲流"><a href="#字节缓冲流" class="headerlink" title="字节缓冲流"></a>字节缓冲流</h3><img src="/2024/01/20/JavaSE-learn/image-20240130183243181.png" srcset="/img/loading.gif" lazyload class title="image-20240130183243181">      
+
+<ol>
+<li>为什么提高了操作数据的性能？</li>
+</ol>
+<p>· 字节缓冲流自带8KB缓冲区</p>
+<p>· 可以提高原始字节流、字符流读写数据的性能</p>
+<ol start="2">
+<li>推荐使用哪种方式提高字节流读写数据的性能?</li>
+</ol>
+<p>· 建议使用字节缓冲输入流、字节缓冲输出流，结合字节数组的方式</p>
+<h3 id="字符缓冲流"><a href="#字符缓冲流" class="headerlink" title="字符缓冲流"></a>字符缓冲流</h3><h4 id="字符缓冲输入流"><a href="#字符缓冲输入流" class="headerlink" title="字符缓冲输入流"></a>字符缓冲输入流</h4><img src="/2024/01/20/JavaSE-learn/image-20240130183850628.png" srcset="/img/loading.gif" lazyload class title="image-20240130183850628">
+
+<h4 id="字符缓冲输出流"><a href="#字符缓冲输出流" class="headerlink" title="字符缓冲输出流"></a>字符缓冲输出流</h4><img src="/2024/01/20/JavaSE-learn/image-20240130183901924.png" srcset="/img/loading.gif" lazyload class title="image-20240130183901924">
+
+<h3 id="转换流"><a href="#转换流" class="headerlink" title="转换流"></a>转换流</h3><ol>
+<li>为什么会有转换流</li>
+</ol>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs">· 如果代码编码和文件编码不一致，使用字符流直接读取会乱码<br>· 文件编码和读取的编码必须一致才不会乱码<br></code></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>如何解决</li>
+</ol>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs">· 使用字符输入转换流<br>· 可以提取文件的原始字节流，原始字节不会存在问题。<br>· 然后把字节流以指定编码转换成字符输入流，这样字符输入流中的字符就不乱码了<br></code></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>字符输入转换流InputStreamReader作用：</li>
+</ol>
+<figure class="highlight delphi"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs delphi">· 可以读取不同编码乱码的问题<br>· <span class="hljs-keyword">public</span> InputStreamReader(InputStream <span class="hljs-keyword">is</span>,<span class="hljs-keyword">String</span> charset):<br>	可以指定编码把原始字节流转换成字符流，如此字符流中的字符不乱码。<br></code></pre></td></tr></table></figure>
+
+<img src="/2024/01/20/JavaSE-learn/image-20240130214107955.png" srcset="/img/loading.gif" lazyload class title="image-20240130214107955">
+
+<ol start="4">
+<li>如果需要控制写出去的字符使用的编码，怎么办？</li>
+</ol>
+<figure class="highlight gcode"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs gcode">·可以把字符以指定编码获取字节后再使用字节输出流写出去：“我爱你中国”.getBytes<span class="hljs-comment">(编码)</span><br>· 也可以使用字符输出转换流实现。<br></code></pre></td></tr></table></figure>
+
+<img src="/2024/01/20/JavaSE-learn/image-20240130215124775.png" srcset="/img/loading.gif" lazyload class title="image-20240130215124775">
+
+<ol start="5">
+<li>字符输出转换流OutputStreamWriter的作用？</li>
+</ol>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs">可以指定编码把字节输出流转换成字符输出流，从而可以指定写出去的字符编码！<br></code></pre></td></tr></table></figure>
+
+<h3 id="对象字节输出流-ObjectOutputStream-对象序列化"><a href="#对象字节输出流-ObjectOutputStream-对象序列化" class="headerlink" title="对象字节输出流-ObjectOutputStream(对象序列化)"></a>对象字节输出流-ObjectOutputStream(对象序列化)</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> <span class="hljs-keyword">throws</span> Exception &#123;<br>        <span class="hljs-comment">// 1、创建学生对象</span><br>        <span class="hljs-type">Student</span> <span class="hljs-variable">s</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Student</span>(<span class="hljs-string">&quot;xx&quot;</span>, <span class="hljs-string">&quot;chenlei&quot;</span>,<span class="hljs-string">&quot;1314520&quot;</span>, <span class="hljs-number">21</span>);<br><br>        <span class="hljs-comment">// 2、对象序列化：使用对象字节输出流包装字节输出流管道</span><br>        <span class="hljs-type">ObjectOutputStream</span> <span class="hljs-variable">oos</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">ObjectOutputStream</span>(<span class="hljs-keyword">new</span> <span class="hljs-title class_">FileOutputStream</span>(<span class="hljs-string">&quot;io-app2/src/obj.txt&quot;</span>));<br><br>        <span class="hljs-comment">// 3、直接调用序列化方法</span><br>        oos.writeObject(s);<br><br>        <span class="hljs-comment">// 4、释放资源</span><br>        oos.close();<br>        System.out.println(<span class="hljs-string">&quot;序列化完成了~~&quot;</span>);<br><br>    &#125;<br></code></pre></td></tr></table></figure>
+
+<ol>
+<li>对象序列化的含义</li>
+</ol>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs">· 把对象数据存入到文件中<br></code></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>序列化对象的要求</li>
+</ol>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs">对象必须实现序列化接口<br></code></pre></td></tr></table></figure>
+
+<h3 id="对象字节输入流-ObjectInputStream-对象反序列化"><a href="#对象字节输入流-ObjectInputStream-对象反序列化" class="headerlink" title="对象字节输入流-ObjectInputStream(对象反序列化)"></a>对象字节输入流-ObjectInputStream(对象反序列化)</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> <span class="hljs-keyword">throws</span> Exception &#123;<br>    <span class="hljs-comment">// 1、创建对象字节输入流管道包装低级的字节输入流管道</span><br>    <span class="hljs-type">ObjectInputStream</span> <span class="hljs-variable">is</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">ObjectInputStream</span>(<span class="hljs-keyword">new</span> <span class="hljs-title class_">FileInputStream</span>(<span class="hljs-string">&quot;src/obj.txt&quot;</span>));<br><br>    <span class="hljs-comment">// 2、调用对象字节输入流的反序列化方法</span><br>    <span class="hljs-type">Student</span> <span class="hljs-variable">s</span> <span class="hljs-operator">=</span> (Student) is.readObject();<br><br>    System.out.println(s);<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<h3 id="打印流"><a href="#打印流" class="headerlink" title="打印流"></a>打印流</h3><img src="/2024/01/20/JavaSE-learn/image-20240130220427591.png" srcset="/img/loading.gif" lazyload class title="image-20240130220427591">
+
+<img src="/2024/01/20/JavaSE-learn/image-20240130220441921.png" srcset="/img/loading.gif" lazyload class title="image-20240130220441921">
+
+<p>输出语句重定向</p>
+<img src="/2024/01/20/JavaSE-learn/image-20240130221025137.png" srcset="/img/loading.gif" lazyload class title="image-20240130221025137">
+
+<h3 id="Properties属性集对象"><a href="#Properties属性集对象" class="headerlink" title="Properties属性集对象"></a>Properties属性集对象</h3><h3 id="核心作用"><a href="#核心作用" class="headerlink" title="核心作用"></a>核心作用</h3><figure class="highlight maxima"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs maxima">· Properties代表的是一个属性文件，可以把自己对象中的键值对信息存入到一个属性文件中去。<br>· 属性文件：后缀是.<span class="hljs-built_in">properties</span>结尾的文件,里面的内容都是 <span class="hljs-built_in">key</span>=value，后续做系统配置信息的。<br></code></pre></td></tr></table></figure>
+
+<h4 id="相关API-1"><a href="#相关API-1" class="headerlink" title="相关API"></a>相关API</h4><img src="/2024/01/20/JavaSE-learn/image-20240130221203893.png" srcset="/img/loading.gif" lazyload class title="image-20240130221203893">
+
+<h4 id="example"><a href="#example" class="headerlink" title="example"></a>example</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> <span class="hljs-keyword">throws</span> Exception &#123;<br>        <span class="hljs-comment">// 需求：使用Properties把键值对信息存入到属性文件中去。</span><br>        <span class="hljs-type">Properties</span> <span class="hljs-variable">properties</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Properties</span>();<br>        properties.setProperty(<span class="hljs-string">&quot;admin&quot;</span>, <span class="hljs-string">&quot;123456&quot;</span>);<br>        properties.setProperty(<span class="hljs-string">&quot;dlei&quot;</span>, <span class="hljs-string">&quot;003197&quot;</span>);<br>        properties.setProperty(<span class="hljs-string">&quot;heima&quot;</span>, <span class="hljs-string">&quot;itcast&quot;</span>);<br>        System.out.println(properties);<br><br>        <span class="hljs-comment">/**</span><br><span class="hljs-comment">           参数一：保存管道 字符输出流管道</span><br><span class="hljs-comment">           参数二：保存心得</span><br><span class="hljs-comment">         */</span><br>        properties.store(<span class="hljs-keyword">new</span> <span class="hljs-title class_">FileWriter</span>(<span class="hljs-string">&quot;src/users.properties&quot;</span>)<br>                , <span class="hljs-string">&quot;this is users!! i am very happy! give me 100!&quot;</span>);<br><br>    &#125;<br></code></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> <span class="hljs-keyword">throws</span> Exception &#123;<br>        <span class="hljs-comment">// 需求：Properties读取属性文件中的键值对信息。（读取）</span><br>        <span class="hljs-type">Properties</span> <span class="hljs-variable">properties</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Properties</span>();<br>        System.out.println(properties);<br><br>        <span class="hljs-comment">// 加载属性文件中的键值对数据到属性对象properties中去</span><br>        properties.load(<span class="hljs-keyword">new</span> <span class="hljs-title class_">FileReader</span>(<span class="hljs-string">&quot;io-app2/src/users.properties&quot;</span>));<br><br>        System.out.println(properties);<br>        <span class="hljs-type">String</span> <span class="hljs-variable">rs</span> <span class="hljs-operator">=</span> properties.getProperty(<span class="hljs-string">&quot;dlei&quot;</span>);<br>        System.out.println(rs);<br>        <span class="hljs-type">String</span> <span class="hljs-variable">rs1</span> <span class="hljs-operator">=</span> properties.getProperty(<span class="hljs-string">&quot;admin&quot;</span>);<br>        System.out.println(rs1);<br>    &#125;<br></code></pre></td></tr></table></figure>
+
+<h3 id="commons-io"><a href="#commons-io" class="headerlink" title="commons-io"></a>commons-io</h3><img src="/2024/01/20/JavaSE-learn/image-20240130221423004.png" srcset="/img/loading.gif" lazyload class title="image-20240130221423004">
 
                 
               </div>
